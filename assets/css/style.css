@@ -26,3 +26,7 @@ section{
     top: 60px;
     padding: 10px;
 }
+
+.card{
+    max-width: 100%;
+}
