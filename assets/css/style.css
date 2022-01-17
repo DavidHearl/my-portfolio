@@ -5,6 +5,11 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+.list-group-item{
+    font-size: 0.9rem;
+    padding: 6px 16px;
+}
+
 .offcanvas-body{
     overflow-y: visible;
 }
@@ -44,4 +49,21 @@ section{
     max-width: 100%;
     margin-top: 5px;
     margin-bottom: 20px;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box: inset 0 0 6px rgb(56, 121, 146);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color:rgb(102, 102, 102);
+    -webkit-box: inset 0 0 6px rgba(81, 160, 153, 0.7);
 }
