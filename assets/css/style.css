@@ -67,3 +67,16 @@ section{
     background-color:rgb(102, 102, 102);
     -webkit-box: inset 0 0 6px rgba(81, 160, 153, 0.7);
 }
+
+/* Gallery*/
+
+#photos{
+    clear: both;
+    line-height: 0;
+    column-count: 4;
+    column-gap: 0;
+}
+
+#photos > img{
+    width: 100%;
+}
