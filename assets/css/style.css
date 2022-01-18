@@ -40,9 +40,7 @@ h5{
 }
 
 section{
-    position: relative;
-    top: 60px;
-    padding: 10px;
+    margin-top: 56px;
 }
 
 .card{
@@ -51,10 +49,20 @@ section{
     margin-bottom: 20px;
 }
 
+.landing-buttons{
+    width: 100%;
+}
+
+#theme{
+    width:100%;
+    background-color: yellow;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
 /* Home */
 
 .home{
-    margin-top: 100px;
     text-align: center;
 }
 
