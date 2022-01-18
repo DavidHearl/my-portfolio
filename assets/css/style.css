@@ -4,16 +4,24 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #2e313b;
+    color: #e0e8ff;
 }
 
-#theme {
+section {
+    margin-top: 10px;
+    padding: 5px;
+}
+
+
+/* #theme {
     width: 100%;
     padding: 5px;
     margin-bottom: 50px;
     border-bottom: .5px solid black;
     background-color: #121212;
     color: white;
-}
+} */
 
 
 /* Navigation ---------------------------------------------------- */
@@ -21,6 +29,8 @@ body {
 .list-group-item {
     font-size: 0.9rem;
     padding: 6px 16px;
+    background-color: #363945;
+    color: #e0e8ff;
 }
 
 .offcanvas-body {
@@ -28,8 +38,8 @@ body {
 }
 
 .navbar {
-    background-color: #be4a4a;
-    color: white;
+    background-color: #363945;
+    border-bottom: 1px solid #494e5c;
 }
 
 .navbar-toggler {
@@ -53,40 +63,27 @@ h4 {
     color: rgb(0, 88, 170);
 }
 
-h5 {
-    color: white;
-}
 
-.button-close {
-    background-color: white;
-}
-
-.nav-item {
-    padding: 0px 5px;
-}
+/* Cards --------------------------------------------------------- */
 
 .card {
     max-width: 100%;
     margin-top: 5px;
     margin-bottom: 20px;
+    background-color: #363945;
+    border: 1px solid #494e5c;
 }
 
-.landing-buttons {
+
+/* Footer -------------------------------------------------------- */
+
+footer {
+    border-top: 1px solid #494e5c;
     width: 100%;
 }
 
 
-/**/
-
-
-/* Home */
-
-.home {
-    text-align: center;
-}
-
-
-/* Scrollbar */
+/* Scrollbar ----------------------------------------------------- */
 
 ::-webkit-scrollbar {
     width: 6px;
@@ -106,7 +103,8 @@ h5 {
 
 /* Gallery*/
 
-#photos {
+
+/* #photos {
     clear: both;
     line-height: 0;
     column-count: 4;
@@ -116,3 +114,5 @@ h5 {
 #photos>img {
     width: 100%;
 }
+
+*/
