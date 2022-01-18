@@ -1,70 +1,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+/* Global Styles ------------------------------------------------- */
 
-body{
+body {
     font-family: 'Roboto', sans-serif;
 }
 
-.list-group-item{
+#theme {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 50px;
+    border-bottom: .5px solid black;
+    background-color: #121212;
+    color: white;
+}
+
+
+/* Navigation ---------------------------------------------------- */
+
+.list-group-item {
     font-size: 0.9rem;
     padding: 6px 16px;
 }
 
-.offcanvas-body{
+.offcanvas-body {
     overflow-y: visible;
 }
 
-h2{
+.navbar {
+    background-color: #be4a4a;
+    color: white;
+}
+
+.navbar-toggler {
+    padding: 0.25rem;
+    border: none;
+}
+
+
+/* Headings ------------------------------------------------------ */
+
+h2 {
     font-size: 1.4rem;
 }
 
-h3{
+h3 {
     font-size: 1.3rem;
 }
 
-h4{
+h4 {
     font-size: 1.2rem;
     color: rgb(0, 88, 170);
 }
 
-h5{
+h5 {
     color: white;
 }
 
-.button-close{
+.button-close {
     background-color: white;
 }
 
-.nav-item{
+.nav-item {
     padding: 0px 5px;
 }
 
-section{
-    margin-top: 56px;
-}
-
-.card{
+.card {
     max-width: 100%;
     margin-top: 5px;
     margin-bottom: 20px;
 }
 
-.landing-buttons{
+.landing-buttons {
     width: 100%;
 }
 
-#theme{
-    width:100%;
-    background-color: yellow;
-    padding: 10px;
-    margin-bottom: 50px;
-}
+
+/**/
+
 
 /* Home */
 
-.home{
+.home {
     text-align: center;
 }
+
 
 /* Scrollbar */
 
@@ -79,19 +99,20 @@ section{
 
 ::-webkit-scrollbar-thumb {
     border-radius: 4px;
-    background-color:rgb(102, 102, 102);
+    background-color: rgb(102, 102, 102);
     -webkit-box: inset 0 0 6px rgba(81, 160, 153, 0.7);
 }
 
+
 /* Gallery*/
 
-#photos{
+#photos {
     clear: both;
     line-height: 0;
     column-count: 4;
     column-gap: 0;
 }
 
-#photos > img{
+#photos>img {
     width: 100%;
 }
