@@ -9,8 +9,8 @@ body {
 }
 
 section {
-    /* margin-top: 10px; */
-    /* padding: 5px; */
+    margin-top: 10px;
+    padding: 5px;
 }
 
 
@@ -28,13 +28,17 @@ section {
 
 .list-group-item {
     font-size: 0.9rem;
-    /* padding: 6px 16px; */
+    padding: 6px 16px;
     background-color: #363945;
     color: #e0e8ff;
 }
 
 .offcanvas-body {
     overflow-y: visible;
+}
+
+.navbar {
+    background-color: black;
 }
 
 .nav {
@@ -55,7 +59,12 @@ h3 {
 
 h4 {
     font-size: 1.2rem;
-    color: rgb(0, 88, 170);
+    color: rgb(40, 132, 218);
+}
+
+hr {
+    margin: 0;
+    margin-bottom: 1rem;
 }
 
 .highlight {
@@ -70,19 +79,25 @@ h4 {
     margin-top: 5px;
     margin-bottom: 20px;
     background-color: #363945;
-    /* border: 1px solid #494e5c; */
+    border: 1px solid #494e5c;
+}
+
+.btn {
+    position: relative;
+    bottom: 2px;
+    margin-left: 10px;
 }
 
 
 /* Footer -------------------------------------------------------- */
 
 footer {
-    /* border-top: 1px solid #494e5c; */
+    border-top: 1px solid #494e5c;
     width: 100%;
 }
 
 
-/* Scrollbar -----------------------------------------------------
+/* Scrollbar ----------------------------------------------------- */
 
 ::-webkit-scrollbar {
     width: 6px;
@@ -97,7 +112,7 @@ footer {
     border-radius: 4px;
     background-color: rgb(102, 102, 102);
     -webkit-box: inset 0 0 6px rgba(81, 160, 153, 0.7);
-} */
+}
 
 
 /* Gallery*/
