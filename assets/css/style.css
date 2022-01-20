@@ -1,20 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
-/* Global Styles ------------------------------------------------- */
-
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #2e313b;
-    color: #e0e8ff;
-}
-
-section {
-    margin-top: 10px;
-    padding: 5px;
-}
-
-
-/* #theme {
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+    /* Global Styles ------------------------------------------------- */
+    
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #2e313b;
+        color: #cccccc;
+    }
+    
+    section {
+        margin-top: 10px;
+        padding: 5px;
+    }
+    
+    .homepage {
+        background-color: #363945;
+    }
+    /* #theme {
     width: 100%;
     padding: 5px;
     margin-bottom: 50px;
@@ -22,103 +23,99 @@ section {
     background-color: #121212;
     color: white;
 } */
-
-
-/* Navigation ---------------------------------------------------- */
-
-.list-group-item {
-    font-size: 0.9rem;
-    padding: 6px 16px;
-    background-color: #363945;
-    color: #e0e8ff;
-}
-
-.offcanvas-body {
-    overflow-y: visible;
-}
-
-.navbar {
-    background-color: black;
-}
-
-.nav {
-    background-color: #363945;
-    border-bottom: 1px solid #494e5c;
-}
-
-
-/* Headings ------------------------------------------------------ */
-
-h2 {
-    font-size: 1.4rem;
-}
-
-h3 {
-    font-size: 1.3rem;
-}
-
-h4 {
-    font-size: 1.2rem;
-    color: rgb(40, 132, 218);
-}
-
-hr {
-    margin: 0;
-    margin-bottom: 1rem;
-}
-
-.highlight {
-    color: red;
-}
-
-
-/* Cards --------------------------------------------------------- */
-
-.card {
-    max-width: 100%;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    background-color: #363945;
-    border: 1px solid #494e5c;
-}
-
-.btn {
-    position: relative;
-    bottom: 2px;
-    margin-left: 10px;
-}
-
-
-/* Footer -------------------------------------------------------- */
-
-footer {
-    border-top: 1px solid #494e5c;
-    width: 100%;
-}
-
-
-/* Scrollbar ----------------------------------------------------- */
-
-::-webkit-scrollbar {
-    width: 6px;
-}
-
-::-webkit-scrollbar-track {
-    -webkit-box: inset 0 0 6px rgb(56, 121, 146);
-    border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb {
-    border-radius: 4px;
-    background-color: rgb(102, 102, 102);
-    -webkit-box: inset 0 0 6px rgba(81, 160, 153, 0.7);
-}
-
-
-/* Gallery*/
-
-
-/* #photos {
+    /* Navigation ---------------------------------------------------- */
+    
+    .list-group-item {
+        font-size: 0.9rem;
+        padding: 6px 16px;
+        background-color: #363945;
+        color: #cccccc;
+    }
+    
+    .offcanvas-body {
+        overflow-y: visible;
+    }
+    
+    .navbar-dark,
+    .navbar-nav {
+        color: yellow;
+        /* color: #ccc; */
+    }
+    
+    .navbar {
+        background-color: #363945;
+        border-bottom: #494e5c;
+    }
+    
+    .nav-separation {
+        margin: 0;
+    }
+    
+    .nav {
+        background-color: #2e313b;
+    }
+    /* Headings ------------------------------------------------------ */
+    
+    h2 {
+        font-size: 1.4rem;
+    }
+    
+    h3 {
+        font-size: 1.3rem;
+    }
+    
+    h4 {
+        font-size: 1.2rem;
+        color: rgb(40, 132, 218);
+    }
+    
+    hr {
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .highlight {
+        color: red;
+    }
+    /* Cards --------------------------------------------------------- */
+    
+    .card {
+        max-width: 100%;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        background-color: #363945;
+        border: 1px solid #494e5c;
+    }
+    
+    .btn {
+        position: relative;
+        bottom: 2px;
+        margin-left: 10px;
+    }
+    /* Footer -------------------------------------------------------- */
+    
+    footer {
+        border-top: 1px solid #494e5c;
+        width: 100%;
+    }
+    /* Scrollbar ----------------------------------------------------- */
+    
+     ::-webkit-scrollbar {
+        width: 6px;
+    }
+    
+     ::-webkit-scrollbar-track {
+        -webkit-box: inset 0 0 6px rgb(56, 121, 146);
+        border-radius: 4px;
+    }
+    
+     ::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        background-color: rgb(102, 102, 102);
+        -webkit-box: inset 0 0 6px rgba(81, 160, 153, 0.7);
+    }
+    /* Gallery*/
+    /* #photos {
     clear: both;
     line-height: 0;
     column-count: 4;
