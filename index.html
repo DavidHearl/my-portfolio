@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- 
-    To run use "py -m http.server"
-    instead of "python3 -m http.server"
--->
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,53 +12,58 @@
 </head>
 
 <body>
-
     <header>
-        <nav>
-            <ul class="nav justify-content-center">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./cv.html">CV</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Me</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark" id="navigation">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">My Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Contact Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./cv.html">CV<button type="button" class="btn btn-outline-success btn-sm">Download</button></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-cog"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Dark Mode</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <section class="home">
-        <div id="theme">Click here to join the darkside !</div>
-        <div class="row">
-            <!-- <div class="col-12">
-                <h1>Hi, I'm <span class="highlight">David.</span></h1>
-                <p>Previously an Engineer, Aspiring to become a Web Developer</p>
-            </div> -->
-        </div>
-        <div class="row">
-            <!-- <div class="col-5"><button type="button" class="btn btn-dark landing-buttons">Contact Me</button></div>
-            <div class="col-5"><button type="button" class="btn btn-dark landing-buttons">See My Work</button></div> -->
+    <section class=background>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Hi, I'm <span class="highlight">David.</span></h1>
+                    <p>Previously an Engineer, Aspiring to become a Web Developer</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <footer>
-        <div class="row container-fluid">
-            <div class="col">
-                <p>Dark Mode</p>
-                <div class="custom-control custom-switch">
-                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                    <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
-                </div>
-            </div>
-        </div>
+        <p>PlaceHolder Text</p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>

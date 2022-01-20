@@ -4,24 +4,14 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #2e313b;
-    color: #e0e8ff;
+    color: #e2e2e2;
 }
 
-section {
-    margin-top: 10px;
-    padding: 5px;
+.background {
+    padding-top: 20px;
+    background: repeating-linear-gradient(135deg, rgb(40, 40, 40) 6px, rgb(30, 30, 30) 12px);
+    overflow-y: hidden;
 }
-
-
-/* #theme {
-    width: 100%;
-    padding: 5px;
-    margin-bottom: 50px;
-    border-bottom: .5px solid black;
-    background-color: #121212;
-    color: white;
-} */
 
 
 /* Navigation ---------------------------------------------------- */
@@ -37,13 +27,37 @@ section {
     overflow-y: visible;
 }
 
-.navbar {
-    background-color: black;
+.navbar-dark .navbar-toggler {
+    color: none;
+    padding: 0.25rem;
+    border: none;
 }
 
-.nav {
-    background-color: #363945;
-    border-bottom: 1px solid #494e5c;
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar,
+footer {
+    background: repeating-linear-gradient(135deg, rgb(60, 60, 60) 6px, rgb(50, 50, 50) 12px);
+}
+
+.nav-link {
+    padding: 16px 0 0 0;
+}
+
+.btn {
+    position: relative;
+    bottom: 2px;
+    margin-left: 15px;
+}
+
+.btn-group-sm>.btn,
+.btn-sm {
+    margin-left: 15px;
+    padding: 0.1rem 0.4rem;
+    font-size: .75rem;
+    border-radius: 0.2rem;
 }
 
 
@@ -51,6 +65,7 @@ section {
 
 h2 {
     font-size: 1.4rem;
+    margin: 4px;
 }
 
 h3 {
@@ -78,22 +93,21 @@ hr {
     max-width: 100%;
     margin-top: 5px;
     margin-bottom: 20px;
-    background-color: #363945;
-    border: 1px solid #494e5c;
+    background: repeating-linear-gradient(135deg, rgb(60, 60, 60) 6px, rgb(50, 50, 50) 12px);
+    border: 1px solid #444;
+}
+
+.list-group-item {
+    font-size: 0.9rem;
+    padding: 6px 16px;
+    background: repeating-linear-gradient(135deg, rgb(60, 60, 60) 6px, rgb(50, 50, 50) 12px);
+    color: #e2e2e2;
 }
 
 .btn {
     position: relative;
     bottom: 2px;
     margin-left: 10px;
-}
-
-
-/* Footer -------------------------------------------------------- */
-
-footer {
-    border-top: 1px solid #494e5c;
-    width: 100%;
 }
 
 
@@ -111,22 +125,5 @@ footer {
 ::-webkit-scrollbar-thumb {
     border-radius: 4px;
     background-color: rgb(102, 102, 102);
-    -webkit-box: inset 0 0 6px rgba(81, 160, 153, 0.7);
+    -webkit-box: inset 0 0 6px rgba(81, 160, 153, 1);
 }
-
-
-/* Gallery*/
-
-
-/* #photos {
-    clear: both;
-    line-height: 0;
-    column-count: 4;
-    column-gap: 0;
-}
-
-#photos>img {
-    width: 100%;
-}
-
-*/
