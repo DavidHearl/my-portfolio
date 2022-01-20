@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>My Portfolio - David Hearl</title>
+    <title>Projects - David Hearl</title>
 </head>
 
 <body>
@@ -18,7 +19,6 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center">
                         <li class="nav-item">
@@ -34,14 +34,16 @@
                             <a class="nav-link" href="./projects.html">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="./cv.html">CV</a>
+                            <a class="nav-link active" href="./cv.html">CV<button type="button"
+                                    class="btn btn-outline-success btn-sm">Download</button></a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Settings
+                                <i class="fas fa-cog"></i>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="#">Dark Mode</a></li>
+                                <li><a class="dropdown-item" href="#">Another Option</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -51,33 +53,82 @@
     </header>
 
     <section class="background">
-        <div class="row">
-
-        </div>
-
-
-        <h1>Finished Projects</h1>s
-
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6">
-                    <h1>Finished Projects</h1>
-                    <h2>Chiropractic Website</h2>
-                    <a href="https://davidhearl.github.io/chiropractic-website/index.html" target="_blank">Click</a>
-                    <h2>Flag Game</h2>
-                    <a href="https://davidhearl.github.io/flag-game/" target="_blank">Click</a>
-                    <h2>Connect 4</h2>
-                    <a href="https://dry-savannah-35963.herokuapp.com/" target="_blank">Click</a>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                    Chiropractic Website
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                                <div class="accordion-body">
+                                    <a href="https://davidhearl.github.io/chiropractic-website/index.html" target="_blank">Live Site</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                    Flag Game
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                                <div class="accordion-body">
+                                    <a href="https://davidhearl.github.io/flag-game/" target="_blank">Click</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                    Connect Four
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                                <div class="accordion-body">
+                                    <a href="https://dry-savannah-35963.herokuapp.com/" target="_blank">Click</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="col-12 col-lg-6">
-                    <h1>Work In Projects</h1>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                    Investment Dashboard
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                                <div class="accordion-body">
+                                    <a href="https://davidhearl.github.io/investment-dashboard/" target="_blank">Live Site</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                    My Portfolio
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                                <div class="accordion-body">
+                                    <a href="https://davidhearl.github.io/flag-game/" target="_blank">Click</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <footer>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel eligendi quae fuga, quod incidunt corrupti quibusdam nisi consectetur nulla rem cupiditate amet, pariatur temporibus repellendus et porro reprehenderit ducimus qui.</p>
+
     </footer>
 </body>
 
