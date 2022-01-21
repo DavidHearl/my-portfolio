@@ -1,24 +1,24 @@
-// let mode = "dark"
+let mode = "dark"
 
-// $("#theme").on("click", function() {
-//     if (mode == "dark") {
+// This obviouisly changed the settings of the darkmode button, set it to change text first
+$(".toggle").on("click", function() {
+    if (mode == "dark") {
 
-//         mode = "light"
-//         $(this).text("Click here to come back to the light side !")
-//         $(this).css("background-color", "white");
-//         $(this).css("color", "#121212");
-//         $(".navbar").css("background-color", "black");
-//         $(".navbar").css("color", "white");
-//         $("#navigation").removeClass("navbar-light").addClass("navbar-dark");
+        // Light Mode Settings
+        $(this).text("Dark Mode");
+        $(".background").css("background", "repeating-linear-gradient(135deg, rgb(240, 240, 240) 6px, rgb(230, 230, 230) 12px)");
+        $(".navbar").css("background", "repeating-linear-gradient(135deg, rgb(30,100,150) 6px, rgb(40, 110, 160) 12px)");
+        $("footer").css("background", "repeating-linear-gradient(135deg, rgb(30,100,150) 6px, rgb(40, 110, 160) 12px)");
+        mode = "light";
 
-//     } else {
+    } else {
 
-//         mode = "dark"
-//         $(this).text("Click here to join the dark side !")
-//         $(this).css("background-color", "#121212");
-//         $(this).css("color", "white");
-//         $(".navbar").css("background-color", "#be4a4a");
-//         $(".navbar").css("color", "white");
-//         $("#navigation").removeClass("navbar-dark").addClass("navbar-light");
-//     }
-// })
+        // Dark Mode Settings
+        $(this).text("Light Mode");
+        $(".background").css("background", "repeating-linear-gradient(135deg, rgb(40, 40, 40) 6px, rgb(30, 30, 30) 12px)");
+        $(".navbar").css("background", "repeating-linear-gradient(135deg, rgb(60, 60, 60) 6px, rgb(50, 50, 50) 12px)");
+        $("footer").css("background", "repeating-linear-gradient(135deg, rgb(60, 60, 60) 6px, rgb(50, 50, 50) 12px)");
+        mode = "dark";
+
+    }
+})
