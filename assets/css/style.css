@@ -13,6 +13,15 @@ body {
     overflow-y: hidden;
 }
 
+section {
+    min-height: 95vh;
+}
+
+p {
+    margin-bottom: 0;
+    padding: 8px 0;
+}
+
 
 /* Navigation ---------------------------------------------------- */
 
