@@ -1,15 +1,15 @@
-var mode = "dark"
-
 // Background colors
-let blue = "repeating-linear-gradient(135deg, rgb(30,100,150) 6px, rgb(40, 110, 160) 12px)";
-let white = "repeating-linear-gradient(135deg, rgb(240, 240, 240) 6px, rgb(230, 230, 230) 12px)";
+let blue = "repeating-linear-gradient(135deg, rgb(50,110,180) 6px, rgb(60, 120, 190) 12px)";
+let white = "repeating-linear-gradient(135deg, rgb(240, 240, 245) 6px, rgb(250, 250, 255) 12px)";
 let black = "repeating-linear-gradient(135deg, rgb(40, 40, 40) 6px, rgb(30, 30, 30) 12px)";
 let gray = "repeating-linear-gradient(135deg, rgb(60, 60, 60) 6px, rgb(50, 50, 50) 12px)";
 
-// This obviouisly changed the settings of the darkmode button, set it to change text first
+let test = localStorage.getItem('mode');
+console.log(test);
+
 $(".toggle").on("click", function() {
 
-    if (mode == "dark") {
+    if (test == "dark") {
 
         // Button text
         $(this).text("Dark Mode");
@@ -36,7 +36,7 @@ $(".toggle").on("click", function() {
         $("hr").css("background-color", "black");
 
         // Variables
-        mode = "light";
+        localStorage.setItem('mode', 'light');
 
     } else {
 
@@ -66,7 +66,6 @@ $(".toggle").on("click", function() {
         $("hr").css("background-color", "white");
 
         // Variables
-        mode = "dark";
-
+        localStorage.setItem('mode', 'dark');
     }
 })
