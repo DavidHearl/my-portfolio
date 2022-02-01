@@ -51,7 +51,7 @@
 
     <!-- Landing Page -->
     <section class=background>
-        <div class="container" id="center-container">
+        <div class="container" id="introduction">
             <div class="row">
                 <div class="col">
                     <h1>Hi, I'm <span class="highlight">David.</span></h1>
@@ -68,24 +68,38 @@
 
         <!-- Contact Me -->
         <div class="container">
-            <div class="row">
-                <div class="col">
-                    <form>
-                        <label>Name:</label>
-                        <input type="text">
-                        <label>Email:</label>
-                        <input type="text">
-                        <lable>Message</lable>
-                        <textarea id="w3review" name="w3review" rows="4" cols="50">
-                        </textarea>
-                        <label>Phone Number:</label>
-                        <input type="text">
-                        <input type=submit>
-                    </form>
+            <form class="row justify-content-center">
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Name</label>
+                    <input type="email" class="form-control" id="inputEmail4">
                 </div>
-            </div>
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Phone</label>
+                    <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputState" class="form-label">Subject</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>Choose...</option>
+                        <option>Option 1</option>
+                        <option>Option 1</option>
+                        <option>Option 1</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Example textarea</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="col-md-12">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-success">Request Contact Details</button>
+                </div>
+            </form>
         </div>
-
     </section>
 
     <footer>

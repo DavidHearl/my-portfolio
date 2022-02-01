@@ -9,7 +9,7 @@ body {
 
 .background {
     padding-top: 20px;
-    background: repeating-linear-gradient(135deg, rgb(40, 40, 40) 6px, rgb(30, 30, 30) 12px);
+    background: repeating-linear-gradient(135deg, rgb(30, 30, 30) 6px, rgb(20, 20, 20) 12px);
     overflow-y: hidden;
 }
 
@@ -18,15 +18,15 @@ section {
 }
 
 p {
-    margin-bottom: 0;
-    padding: 8px 0;
+    margin-bottom: 4px;
+    padding: 6px 0;
 }
 
 .status {
     position: absolute;
     margin-bottom: 1px;
     padding-top: 4px;
-    right: 60px;
+    right: 50px;
     width: 100px;
     height: 25px;
     border-radius: 10px;
@@ -56,6 +56,12 @@ p {
     height: 50px;
     border: 1px solid greenyellow;
     background-color: hotpink;
+}
+
+#introduction {
+    height: 400px;
+    text-align: center;
+    padding-top: 100px;
 }
 
 
@@ -128,8 +134,8 @@ footer {
     padding: 4px;
 }
 
-.a {
-    color: #e2e2e2;
+a {
+    color: #d63384;
     text-decoration: none;
 }
 
@@ -152,7 +158,7 @@ h4 {
 
 hr {
     margin: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
     opacity: 0.5;
 }
 
@@ -187,9 +193,9 @@ hr {
 .card {
     max-width: 100%;
     margin-top: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     background: repeating-linear-gradient(135deg, rgb(60, 60, 60) 6px, rgb(50, 50, 50) 12px);
-    border: 1px solid #444;
+    border: 1px solid #666;
 }
 
 .list-group-item {
@@ -214,6 +220,7 @@ hr {
 
 .accordion-item {
     background: repeating-linear-gradient(135deg, rgb(60, 60, 60) 6px, rgb(50, 50, 50) 12px);
+    border: none;
 }
 
 .accordion-button {
@@ -221,26 +228,57 @@ hr {
     color: #e2e2e2;
 }
 
+.accordion-button:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.accordion-body {
+    padding: 0.5rem 1.25rem 0.75rem 1.25rem;
+}
+
 .accordion-button:not(.collapsed) {
     color: #e2e2e2;
     background-color: #e7f1ff;
-    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+
+
+/* Form ---------------------------------------------------------- */
+
+.form-label {
+    margin: 5px 0 0 0;
+}
+
+.form-control {
+    padding: 0.25rem 0.5rem;
+    background-color: rgba(40, 40, 40, .5);
+    color: white;
+}
+
+.form-control:focus {
+    background-color: rgba(50, 50, 50, .5);
+    color: white;
+}
+
+.form-select {
+    padding: 0.25rem 2.25rem 0.25rem 0.25rem;
+    background-color: rgba(20, 20, 20, .5);
 }
 
 
 /* Scrollbar ----------------------------------------------------- */
 
 ::-webkit-scrollbar {
-    width: 6px;
+    width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-    -webkit-box: inset 0 0 6px rgb(56, 121, 146);
-    border-radius: 4px;
+    -webkit-box: inset 0 0 8px rgb(56, 121, 146);
+    background-color: gray;
 }
 
 ::-webkit-scrollbar-thumb {
     border-radius: 4px;
-    background-color: rgb(102, 102, 102);
-    -webkit-box: inset 0 0 6px rgba(81, 160, 153, 1);
+    background-color: rgb(36, 114, 230);
+    -webkit-box: inset 0 0 6px rgb(81, 160, 153);
 }
