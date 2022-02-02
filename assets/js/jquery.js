@@ -1,5 +1,5 @@
 // Background colors
-var blue = "repeating-linear-gradient(135deg, rgb(50,110,180) 6px, rgb(60, 120, 190) 12px)";
+var blue = "repeating-linear-gradient(135deg, rgb(60,140,210) 6px, rgb(70, 150, 220) 12px)";
 var white = "repeating-linear-gradient(135deg, rgb(240, 240, 245) 6px, rgb(250, 250, 255) 12px)";
 var black = "repeating-linear-gradient(135deg, rgb(40, 40, 40) 6px, rgb(30, 30, 30) 12px)";
 var gray = "repeating-linear-gradient(135deg, rgb(60, 60, 60) 6px, rgb(50, 50, 50) 12px)";
@@ -58,25 +58,25 @@ function lightMode() {
 
 document.addEventListener('DOMContentLoaded', function() {
 
-    try {
-        theme;
-    } catch (e) {
-        e; // => ReferenceError
-        localStorage.setItem("theme", "dark")
-        theme = localStorage.getItem("theme")
-    };
+    // try {
+    //     theme;
+    // } catch (e) {
+    //     e; // => ReferenceError
+    //     localStorage.setItem("theme", "dark")
+    //     theme = localStorage.getItem("theme")
+    // };
 
-    if (theme == "light") {
-        lightMode();
-        localStorage.setItem("theme", "dark");
-        theme = localStorage.getItem("theme");
-        console.log(theme);
-    } else {
-        darkMode();
-        localStorage.setItem("theme", "light");
-        theme = localStorage.getItem("theme");
-        console.log(theme);
-    }
+    // if (theme == "light") {
+    //     lightMode();
+    //     localStorage.setItem("theme", "dark");
+    //     theme = localStorage.getItem("theme");
+    //     console.log(theme);
+    // } else {
+    //     darkMode();
+    //     localStorage.setItem("theme", "light");
+    //     theme = localStorage.getItem("theme");
+    //     console.log(theme);
+    // }
 
     console.log(theme)
 

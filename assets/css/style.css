@@ -9,17 +9,17 @@ body {
 
 .background {
     padding-top: 20px;
-    background: repeating-linear-gradient(135deg, rgb(30, 30, 30) 6px, rgb(20, 20, 20) 12px);
-    overflow-y: hidden;
+    background: repeating-linear-gradient(135deg, rgb(40, 40, 40) 6px, rgb(30, 30, 30) 12px);
+    min-height: calc(100vh - 6rem);
 }
 
 section {
-    min-height: 90vh;
+    margin: 3.5rem 0 2.5rem 0;
 }
 
 p {
-    margin-bottom: 4px;
-    padding: 6px 0;
+    padding: 0.5rem 0;
+    margin-bottom: 0;
 }
 
 .status {
@@ -44,11 +44,15 @@ p {
 }
 
 .development {
-    background-color: rgba(230, 90, 10);
+    background-color: rgb(230, 90, 10);
 }
 
 .inception {
-    background-color: rgba(30, 140, 170);
+    background-color: rgb(30, 140, 170);
+}
+
+.live {
+    background-color: rgb(200, 40, 120);
 }
 
 .square {
@@ -59,9 +63,9 @@ p {
 }
 
 #introduction {
-    height: 400px;
+    height: 600px;
     text-align: center;
-    padding-top: 100px;
+    vertical-align: middle;
 }
 
 
@@ -96,8 +100,15 @@ footer {
     padding: 8px 0 8px 5px;
 }
 
-.navbar-nav .nav-link {
+
+/* .navbar-nav .nav-link {
     padding-left: 10px;
+} */
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    margin-right: 5px;
+    padding-right: 0.6rem;
+    padding-left: 0.6rem;
 }
 
 .nav-link:hover {
@@ -234,7 +245,8 @@ hr {
 }
 
 .accordion-body {
-    padding: 0.5rem 1.25rem 0.75rem 1.25rem;
+    padding: 1rem 1.25rem 0.7rem 1.25rem;
+    border-top: 1px solid rgb(30, 30, 30);
 }
 
 .accordion-button:not(.collapsed) {
