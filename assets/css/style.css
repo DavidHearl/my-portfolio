@@ -5,6 +5,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: #e2e2e2;
+    overflow: overlay;
 }
 
 .background {
@@ -63,9 +64,15 @@ p {
 }
 
 #introduction {
-    height: 600px;
     text-align: center;
     vertical-align: middle;
+    margin-top: 10rem;
+    margin-bottom: 25rem;
+}
+
+.fa-angle-double-down {
+    margin-top: 20px;
+    font-size: 40px;
 }
 
 
@@ -99,11 +106,6 @@ footer {
 .nav-link {
     padding: 8px 0 8px 5px;
 }
-
-
-/* .navbar-nav .nav-link {
-    padding-left: 10px;
-} */
 
 .navbar-expand-lg .navbar-nav .nav-link {
     margin-right: 5px;
@@ -174,7 +176,7 @@ hr {
 }
 
 .highlight {
-    color: red;
+    color: rgb(200, 40, 120);
 }
 
 
@@ -216,6 +218,10 @@ hr {
     color: #e2e2e2;
 }
 
+li {
+    padding: 2px 0;
+}
+
 .btn {
     position: relative;
     bottom: 2px;
@@ -251,7 +257,13 @@ hr {
 
 .accordion-button:not(.collapsed) {
     color: #e2e2e2;
-    background-color: #e7f1ff;
+}
+
+.fa-html5,
+.fa-css3-alt,
+.fa-github {
+    font-size: 1.2rem;
+    margin-left: 5px;
 }
 
 
@@ -281,16 +293,17 @@ hr {
 /* Scrollbar ----------------------------------------------------- */
 
 ::-webkit-scrollbar {
-    width: 8px;
-}
-
-::-webkit-scrollbar-track {
-    -webkit-box: inset 0 0 8px rgb(56, 121, 146);
-    background-color: gray;
+    background: transparent;
+    width: 4px;
 }
 
 ::-webkit-scrollbar-thumb {
     border-radius: 4px;
     background-color: rgb(36, 114, 230);
     -webkit-box: inset 0 0 6px rgb(81, 160, 153);
+}
+
+::-webkit-scrollbar-corner {
+    border-radius: 10px;
+    background: lightblue;
 }
