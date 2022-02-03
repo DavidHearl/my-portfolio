@@ -13,9 +13,9 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="navigation">
+        <nav class="navbar navbar-expand-lg fixed-top" id="navigation">
             <div class="container">
-                <a class="navbar-brand" href="#">My Portfolio</a>
+                <a class="navbar-brand" href="./index.html">My Portfolio</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -32,15 +32,17 @@
                             <a class="nav-link active" href="./projects.html">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./cv.html">CV<button type="button" class="btn btn-outline-success btn-sm">Download</button></a>
+                            <a class="nav-link" href="./cv.html">CV</a>
+                        </li>
+                        <li>
+                            <a href="assets/CV.pdf" target="_blank"><button type="button" class="btn btn-outline-success btn-sm">Download</button></a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fas fa-cog"></i>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <button type="button" class="btn btn-secondary btn-sm toggle">Light Mode</button>
-                                <li class="settings">Another Option</li>
+                                <button type="button" class="btn btn-secondary btn-sm toggle" href="assets/">Light Mode</button>
                             </ul>
                         </li>
                     </ul>
@@ -51,15 +53,37 @@
 
     <section class="background">
         <div class="container">
-            <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="row">
 
+                <h2>Overview</h2>
+                <hr>
+                <div class="col-md-7">
+                </div>
+                <div class="col-md-5">
+                    <div class="inline">
+                        <div class="status complete">Completed</div>
+                        <p>Test</p>
+                    </div>
+                    <ul>
+                        <li>Completed - </li>
+                        <li>Update - </li>
+                        <li>Development - </li>
+                        <li>Live - </li>
+                        <li>Inception - </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="accordion accordion-flush" id="accordionFlushExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingOne">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        Chiropractic Website <div class="status complete">Completed</div>
+                        Chiropractic Website <div class="status complete project-progress">Completed</div>
                     </button>
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+
                         <div class="accordion-body">
                             <div class="row">
                                 <div class="col-md-6">
@@ -109,7 +133,7 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingTwo">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                      Flag Game <div class="status update">Update</div>
+                      Flag Game <div class="status update project-progress">Update</div>
                     </button>
                     </h2>
                     <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
@@ -141,7 +165,7 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingThree">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                      Connect Four <div class="status complete">Completed</div>
+                      Connect Four <div class="status complete project-progress">Completed</div>
                     </button>
                     </h2>
                     <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
@@ -177,7 +201,7 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingFour">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                      Investment Dashboard <div class="status development">Development</div>
+                      Investment Dashboard <div class="status development project-progress">Development</div>
                     </button>
                     </h2>
                     <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
@@ -207,7 +231,7 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingFive">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                      My Portfolio <div class="status development">Development</div>
+                      My Portfolio <div class="status development project-progress">Development</div>
                     </button>
                     </h2>
                     <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
@@ -242,7 +266,7 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingSix">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-                      Autodesk Inventor AddIn <div class="status live">Live</div>
+                      Autodesk Inventor AddIn <div class="status live project-progress">Live</div>
                     </button>
                     </h2>
                     <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
@@ -269,7 +293,7 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingSeven">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
-                      GYM Records <div class="status inception">Inception</div>
+                      GYM Records <div class="status inception project-progress">Inception</div>
                     </button>
                     </h2>
                     <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
@@ -277,6 +301,9 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <h4>Title</h4>
+                                    <a href="https://davidhearl.github.io/gym-records/index.html" target="_blank">Website Link</a>
+                                    <p>Placehodler Text</p>
+                                    <a href="https://github.com/DavidHearl/gym-records" target="_blank">Git Hub Repository</a>
                                     <p>Languages and Tools Used</p>
                                     <ul>
                                         <li>HTML5 <i class="fab fa-html5"></i></li>
@@ -298,7 +325,7 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingEight">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
-                      Enigma Machine <div class="status inception">Inception</div>
+                      Enigma Machine <div class="status development project-progress">Development</div>
                     </button>
                     </h2>
                     <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
@@ -306,6 +333,9 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <h4>Creating a digital Enigma Machine</h4>
+                                    <a href="https://davidhearl.github.io/enigma-machine/index.html" target="_blank">Website Link</a>
+                                    <p>Placehodler Text</p>
+                                    <a href="https://github.com/DavidHearl/enigma-machine" target="_blank">Git Hub Repository</a>
                                     <p>Languages and Tools Used</p>
                                     <ul>
                                         <li>HTML5 <i class="fab fa-html5"></i></li>
@@ -322,6 +352,35 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingNine">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                     CAD Training <div class="status inception project-progress">Inception</div>
+                    </button>
+                    </h2>
+                    <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h4>Autodesk Inventor Training Manual</h4>
+                                    <p>Languages and Tools Used</p>
+                                    <ul>
+                                        <li>HTML5 <i class="fab fa-html5"></i></li>
+                                        <li>CSS3 <i class="fab fa-css3-alt"></i></li>
+                                        <li>Javascript <i class="fab fa-python"></i></li>
+                                        <li>Git <i class="fab fa-git-alt"></i></li>
+                                        <li>Github <i class="fab fa-github"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4>Updates</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
         </div>

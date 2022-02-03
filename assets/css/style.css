@@ -25,16 +25,23 @@ p {
 }
 
 .status {
-    position: absolute;
     margin-bottom: 1px;
     padding-top: 4px;
-    right: 50px;
     width: 100px;
     height: 25px;
     border-radius: 10px;
     text-align: center;
     font-size: 0.9rem;
     border: 1px solid black;
+}
+
+.project-progress {
+    position: absolute;
+    right: 50px;
+}
+
+.btn-sm {
+    margin-top: 9px;
 }
 
 .complete {
@@ -110,9 +117,30 @@ footer {
     background: repeating-linear-gradient(135deg, rgb(60, 60, 60) 6px, rgb(50, 50, 50) 12px);
 }
 
+.nav-link {
+    color: #8f8f8f;
+    margin: 0 0.25rem;
+}
+
 .nav-link:hover {
-    background-color: rgba(80, 80, 80, 0.8);
-    border-radius: 10px;
+    color: rgb(200, 40, 120);
+}
+
+.nav-link:focus {
+    color: #8f8f8f;
+}
+
+.active {
+    color: white;
+    border-bottom: 1px solid rgb(200, 40, 120);
+}
+
+.navbar-brand {
+    color: white;
+}
+
+.navbar-brand:hover {
+    color: rgb(200, 40, 120);
 }
 
 .btn {
