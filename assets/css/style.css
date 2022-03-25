@@ -179,10 +179,13 @@ a {
 
 
 /* Headings ------------------------------------------------------ */
+h1{
+    font-size: 1.4rem;
+}
 
 h2 {
-    font-size: 1.4rem;
-    margin: 4px 4px 4px 0;
+    font-size: 1.3rem;
+    margin: 8px 0 2px 0;
 }
 
 h3 {
@@ -190,19 +193,35 @@ h3 {
 }
 
 h4 {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: rgb(40, 132, 218);
 }
 
 hr {
     margin: 0;
-    margin-bottom: 10px;
     opacity: 0.5;
+}
+
+.center{
+    text-align: center;
+}
+
+.title {
+    margin: 10px 0 20px 0;
 }
 
 .highlight {
     color: rgb(200, 40, 120);
 }
+
+.highlight-green{
+    color: greenyellow;
+}
+
+.row > *{
+    padding: 0;
+}
+
 
 
 /* Progress Bars ------------------------------------------------- */
