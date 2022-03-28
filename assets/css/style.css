@@ -9,10 +9,9 @@ body {
     overflow: overlay;
 }
 
-
-/* .background {
-    min-height: calc(100vh - 6rem);
-} */
+.main-window {
+    margin-top: 40px;
+}
 
 p {
     padding: 0.5rem 0;
@@ -97,14 +96,10 @@ p {
     padding: 0;
 }
 
-.navbar-dark .navbar-toggler {
+.navbar-dark {
     color: none;
     padding: 0.25rem;
     border: none;
-}
-
-.navbar-toggler:focus {
-    box-shadow: none;
 }
 
 .navbar,
@@ -139,6 +134,23 @@ footer {
 .navbar-brand:hover {
     color: rgb(200, 40, 120);
 }
+
+
+/* .navbar-toggler{} */
+
+.navbar-toggler-icon {
+    background-color: rgba(20, 20, 20, 0.5);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+
+/* 
+Use this link ot 
+https://mdbootstrap.com/docs/b4/jquery/navigation/hamburger-menu/ 
+*/
 
 .btn {
     position: relative;
