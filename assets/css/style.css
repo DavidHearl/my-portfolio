@@ -178,14 +178,6 @@ a {
 }
 
 
-/* Attempt to split dates from qualifications */
-
-#qualification-dates {
-    display: flex;
-    justify-content: space-between;
-}
-
-
 /* Headings ------------------------------------------------------ */
 
 h1 {
