@@ -5,9 +5,10 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: #e2e2e2;
-     background: repeating-linear-gradient(135deg, rgb(40, 40, 40) 6px, rgb(30, 30, 30) 12px);
+    background: repeating-linear-gradient(135deg, rgb(40, 40, 40) 6px, rgb(30, 30, 30) 12px);
     overflow: overlay;
 }
+
 
 /* .background {
     min-height: calc(100vh - 6rem);
@@ -92,7 +93,7 @@ p {
     overflow-y: visible;
 }
 
-.navbar{
+.navbar {
     padding: 0;
 }
 
@@ -141,16 +142,16 @@ footer {
 
 .btn {
     position: relative;
-    top:10px;
+    top: 10px;
 }
 
-.btn-sm{
+.btn-sm {
     padding: 0.1rem 0.4rem;
     font-size: .75rem;
     border-radius: 0.2rem;
 }
 
-.btn-group-sm > .btn{
+.btn-group-sm>.btn {
     padding: 0.1rem 0.4rem;
     font-size: .75rem;
     border-radius: 0.2rem;
@@ -177,8 +178,17 @@ a {
 }
 
 
+/* Attempt to split dates from qualifications */
+
+#qualification-dates {
+    display: flex;
+    justify-content: space-between;
+}
+
+
 /* Headings ------------------------------------------------------ */
-h1{
+
+h1 {
     font-size: 1.4rem;
 }
 
@@ -201,7 +211,7 @@ hr {
     opacity: 0.5;
 }
 
-.center{
+.center {
     text-align: center;
 }
 
@@ -213,14 +223,13 @@ hr {
     color: rgb(200, 40, 120);
 }
 
-.highlight-green{
+.highlight-green {
     color: greenyellow;
 }
 
-.row > *{
+.row>* {
     padding: 0;
 }
-
 
 
 /* Progress Bars ------------------------------------------------- */
@@ -268,6 +277,7 @@ hr {
 li {
     padding: 2px 0;
 }
+
 
 /* Cards --------------------------------------------------------- */
 
@@ -329,7 +339,7 @@ li {
     background-color: rgba(20, 20, 20, .5);
 }
 
-.footer{
+.footer {
     position: fixed;
     bottom: 0;
 }
