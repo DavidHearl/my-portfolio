@@ -18,11 +18,11 @@ p {
     margin-bottom: 0;
 }
 
-.text-chunk{
+.text-chunk {
     margin: 10px 5px;
 }
 
-hr{
+hr {
     margin-bottom: 10px;
 }
 
@@ -141,6 +141,7 @@ footer {
     color: rgb(200, 40, 120);
 }
 
+
 /* .navbar-toggler{} */
 
 .navbar-toggler-icon {
@@ -206,8 +207,8 @@ h3 {
 }
 
 h4 {
-    font-size: 1.1rem;
-    color: rgb(40, 132, 218);
+    font-size: 1rem;
+    color: rgb(150, 150, 150);
 }
 
 .center {
@@ -288,6 +289,7 @@ li {
     background: repeating-linear-gradient(135deg, rgb(60, 60, 60) 6px, rgb(50, 50, 50) 12px);
     border: none;
 }
+
 
 /* .accordion-flush{
     border: 1px solid rgba(255, 255, 255, 0.1);
