@@ -10,12 +10,20 @@ body {
 }
 
 .main-window {
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 p {
     padding: 0.5rem 0;
     margin-bottom: 0;
+}
+
+.text-chunk{
+    margin: 10px 5px;
+}
+
+hr{
+    margin-bottom: 10px;
 }
 
 .status {
@@ -64,8 +72,6 @@ p {
 #introduction {
     text-align: center;
     vertical-align: middle;
-    margin-top: 10rem;
-    margin-bottom: 25rem;
 }
 
 .arrow {
@@ -135,7 +141,6 @@ footer {
     color: rgb(200, 40, 120);
 }
 
-
 /* .navbar-toggler{} */
 
 .navbar-toggler-icon {
@@ -145,12 +150,6 @@ footer {
 .navbar-toggler:focus {
     box-shadow: none;
 }
-
-
-/* 
-Use this link ot 
-https://mdbootstrap.com/docs/b4/jquery/navigation/hamburger-menu/ 
-*/
 
 .btn {
     position: relative;
@@ -198,21 +197,17 @@ h1 {
 
 h2 {
     font-size: 1.3rem;
-    margin: 8px 0 2px 0;
+    margin-bottom: 2px;
 }
 
 h3 {
     font-size: 1.1rem;
+    margin-bottom: 0;
 }
 
 h4 {
     font-size: 1.1rem;
     color: rgb(40, 132, 218);
-}
-
-hr {
-    margin: 0;
-    opacity: 0.5;
 }
 
 .center {
@@ -294,9 +289,17 @@ li {
     border: none;
 }
 
+/* .accordion-flush{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+} */
+
 .accordion-button {
     background: repeating-linear-gradient(135deg, rgb(60, 60, 60) 6px, rgb(50, 50, 50) 12px);
     color: #e2e2e2;
+    /* margin: 5px 0; */
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .accordion-button:focus {
@@ -305,12 +308,16 @@ li {
 }
 
 .accordion-body {
-    padding: 1rem 1.25rem 0.7rem 1.25rem;
-    border-top: 1px solid rgb(30, 30, 30);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .accordion-button:not(.collapsed) {
     color: #e2e2e2;
+    box-shadow: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 0;
 }
 
 .fa-html5,
