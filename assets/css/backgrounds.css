@@ -1,9 +1,9 @@
 /* ---------- Light Background ---------- */
 
 .light-background {
-    background: linear-gradient(135deg, rgba(105,114,131,1) 0%, rgba(155,164,181,1) 50%, rgba(205,214,231,1) 100%);
+    background: linear-gradient(135deg, #9db7ca 0%, #c3d2e2 50%, #e0e8f5 100%);
     color: rgb(33, 42, 62);
-}
+  }
 
 /* ---------- Dark Background ---------- */
 .dark-background {
