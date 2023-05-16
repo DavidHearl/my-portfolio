@@ -1,2 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+
+} 
+
+nav {
+    background-color: rgb(33, 42, 62);
+}
+
+footer {
+    background-color: rgb(33, 42, 62);
+}
+
+section {
+    height: 100vh;
+    margin: 0;
+}

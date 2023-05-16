@@ -6,7 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-	<link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="./assets/css/backgrounds.css">
 	<title>My Portfolio - David Hearl</title>
 </head>
 
@@ -16,8 +17,8 @@
             <div class="nav-wrapper">
                 <a>David Hearl</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#">Skills</a></li>
                     <li><a href="#">Education</a></li>
                     <li><a href="#">Work</a></li>
@@ -28,21 +29,55 @@
         </nav>        
 	</header>
 
-	<section id="home">
-        <h2>Hello There,</h2>
-        <h2>I'm David <strong>Hearl</strong></h2>
-        <p>I am a Web Developer and Engineer</p>
-        <a href="#about" class="waves-effect waves-light btn">About Me</a>
-        <!-- Section on the right add a picture -->
-        <!-- Add buttons to: Linked in, github, twitter,  -->
+	<section id="home" class="light-background">
+        <div>
+            <h2>Hello There,</h2>
+            <h2>I'm David <strong>Hearl</strong></h2>
+            <p>I am a Web Developer and Engineer</p>
+            <a href="#about" class="waves-effect waves-light btn">About Me</a>
+        </div>
     </section>
 
-	<section id="about"></section>
-	<section id="skills"></section>
-	<section id="education"></section>
-	<section id="work"></section>
-	<section id="experience"></section>
-	<section id="contact"></section>
+	<section id="about" class="dark-background">
+        <div class="container">
+            <div class="spheres">
+                <span style="--i:22;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:31;"></span>
+                <span style="--i:26;"></span>
+                <span style="--i:23;"></span>
+                <span style="--i:29;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:15;"></span>
+                <span style="--i:27;"></span>
+                <span style="--i:20;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:28;"></span>
+                <span style="--i:30;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:18;"></span>
+            </div>
+            <div>
+                <h1>Testing</h1>
+            </div>
+        </div>
+    </section>
+
+	<section id="skills" class="light-background"></section>
+	<section id="education" class="dark-background"></section>
+	<section id="work" class="light-background"></section>
+	<section id="experience" class="dark-background"></section>
+	<section id="contact" class="light-background"></section>
+
+    <footer>
+        
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>

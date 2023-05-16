@@ -1,0 +1,63 @@
+/* Light Background */
+
+.light-background {
+    margin: 20;
+    background: linear-gradient(135deg, rgba(105,114,131,1) 0%, rgba(155,164,181,1) 50%, rgba(205,214,231,1) 100%);
+}
+
+.light-background > * {
+    color: rgb(33, 42, 62);
+}
+
+/* Dark Background */
+
+.dark-background {
+    background: linear-gradient(135deg, rgba(7,22,53,1) 0%, rgba(57,72,103,1) 50%, rgba(107,122,153,1) 100%);
+}
+
+.dark-background > *{
+    color: rgb(241, 246, 249);
+}
+
+/* Spheres */
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.spheres {
+    position: relative;
+    display: flex;
+}
+
+.spheres span {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: white; 
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px gray,
+    0 0 50px gray,
+    0 0 100px gray;
+    animation: animate 30s linear infinite;
+    animation-duration: calc(150s / var(--i));
+}
+
+.spheres span:nth-child(even){
+    background: black; 
+    box-shadow: 0 0 0 10px darkslateblue,
+    0 0 50px darkslateblue,
+    0 0 100px darkslateblue;
+}
+
+@keyframes animate{
+    0% {
+        transform: translateY(100vh) scale(0);
+    }
+    100% {
+        transform: translateY(-10vh) scale(1);
+    }
+}
