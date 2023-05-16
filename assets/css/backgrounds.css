@@ -52,29 +52,26 @@
         visibility: visible;
         transform: translateY(1vh) scale(0.25) translateX(0);
     }
-    5% {
-        transform: translateY(5) scale(0.75) translateX(5px);
-    }
     10% {
-      transform: translateY(10vh) scale(0.75) translateX(-5px);
-    }
-    15% {
-      transform: translateY(15vh) scale(0.75) translateX(5px);
+        transform: translateY(10vh) scale(0.75) translateX(var(--sway));
     }
     20% {
-      transform: translateY(20vh) scale(0.75) translateX(-5px);
-    }
-    25% {
-      transform: translateY(25vh) scale(0.75) translateX(5px);
+        transform: translateY(20vh) scale(0.75) translateX(-var(--sway));
     }
     30% {
-        transform: translateY(30vh) scale(0.75) translateX(-5px);
+        transform: translateY(30vh) scale(0.75) translateX(var(--sway));
     }
-    35% {
-    transform: translateY(35vh) scale(0.75) translateX(5px);
+    40% {
+        transform: translateY(40vh) scale(0.75) translateX(-var(--sway));
+    }
+    60% {
+        transform: translateY(60vh) scale(0.75) translateX(var(--sway));
+    }
+    80% {
+        transform: translateY(80vh) scale(0.75) translateX(-var(--sway));
     }
     100% {
-      transform: translateY(100vh) scale(0.75) translateX(0);
+        transform: translateY(100vh) scale(0.75) translateX(0);
     }
   }
   
