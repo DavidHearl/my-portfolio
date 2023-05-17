@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const randomValue = Math.floor(Math.random() * 45) + 9;
       const randomDuration = Math.random() * 5 + 4; // Adjust the range here for faster animation
       const randomDelay = Math.random() * 5; // Adjust the range here for delay
-      const randomSway = Math.random() * 15 - 1; // Adjust the range here for sway
+      const randomSway = Math.random() * 20 - 2; // Adjust the range here for sway
   
       console.log(`Sphere ${i + 1} - Random Value: ${randomValue}`); // Unitless
       console.log(`Sphere ${i + 1} - Random Duration: ${randomDuration}`); // Value in s
