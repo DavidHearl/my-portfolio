@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="./assets/css/backgrounds.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>My Portfolio - David Hearl</title>
 </head>
 
@@ -17,53 +17,92 @@
     <header>
         <nav>
             <div class="nav-wrapper">
-                <a>David Hearl</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Education</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">Experience</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
     <!-- Main Landing Area -->
-    <section id="home" class="light-background section">
-        <div>
-            <h2>Hello There,</h2>
-            <h2>I'm David <strong>Hearl</strong></h2>
-            <p>I am a Web Developer and Engineer</p>
-            <a href="#about" class="waves-effect waves-light btn">About Me</a>
+    <section id="home" class="light-background">
+        <div class="row">
+            <div class="col s12 m6 introduction">
+                <p>{ Web.Developer }</p>
+                <h2>Hello World !</h2>
+                <p>I am a Web Developer. I enjoy building things and turning ideas into reality</p>
+                <a href="#about">About me</a>
+            </div>
+            <div class="col s12 m6">
+                <div class="screen-graphic">
+                    <div class="screen-menubar">
+                        <span class="red"></span>
+                    </div>
+                    <p class="mini-code">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
     
-    <!-- About section -->
+    <!-- About Section -->
+    <section id="about" class="dark-background">
+        <div class="row">
+            { Introduce.MySelf }
+            <div class="col s12 m6">
+                <div class="placeholder"></div>
+            </div>
+            <div class="col s12 m6">
+                <h2>I am David,</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="light-background">
+        <div class="row">
+            <div class="col s12">
+                <p>{ My.Skills }</p>
+                <h2>Some of my skills</h2>
+                <div class="skills-outter-box">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="work" class="dark-background"></section>
+    <section id="experience" class="light-background"></section>
+    <section id="contact" class="dark-background"></section>
+
     <section id="my-section" class="dark-background">
         <div class="container">
             <!-- Class that contains the sphere spans -->
             <div class="spheres"></div>
         </div>
-        <svg class="bottom-element" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 48" preserveAspectRatio="none">
+        <!-- <svg class="bottom-element" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 48" preserveAspectRatio="none">
             <path fill="white" d="M0,24 C360,60,540,-12,720,24 L720,48 L0,48 Z" />
-        </svg>
+        </svg> -->
     </section>
-
-    <!-- Skills Section -->
-    <section class="light-background">
-          
-    </section>
-
-
-
-
-    <section id="education" class="dark-background"></section>
-    <section id="work" class="light-background"></section>
-    <section id="experience" class="dark-background"></section>
-    <section id="contact" class="light-background"></section>
 
     <footer>
 

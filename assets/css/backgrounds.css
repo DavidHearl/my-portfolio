@@ -1,16 +1,3 @@
-/* ---------- Light Background ---------- */
-
-.light-background {
-  background: linear-gradient(180deg, #9db7ca 0%, #c3d2e2 50%, #e0e8f5 100%);
-  color: rgb(33, 42, 62);
-}
-
-/* ---------- Dark Background ---------- */
-.dark-background {
-  background: linear-gradient(135deg, rgba(7, 22, 53, 1) 0%, rgba(57, 72, 103, 1) 50%, rgba(107, 122, 153, 1) 100%);
-  color: rgb(241, 246, 249);
-}
-
 /* ---------- Animated Spheres ---------- */
 .container {
   position: relative;

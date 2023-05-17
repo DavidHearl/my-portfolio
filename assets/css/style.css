@@ -1,22 +1,111 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+.placeholder {
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+    border-radius: 5px;
+}
+
+/* ---------- General ---------- */
 body {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     margin: 0;
     padding: 0;
-}
-
-nav {
-    background-color: rgb(33, 42, 62);
-}
-
-footer {
-    background-color: rgb(33, 42, 62);
+    color:white;
 }
 
 section {
+    padding: 10px;
     height: 100vh;
-    margin: 0;
+}
+
+.light-background {
+    background-color: rgb(45, 46, 50);
+}
+  
+.dark-background {
+    /* background: linear-gradient(135deg, rgba(7, 22, 53, 1) 0%, rgba(57, 72, 103, 1) 50%, rgba(107, 122, 153, 1) 100%); */
+    background-color: rgb(37, 38, 42);;
+}
+
+/* ---------- Navigation ---------- */
+nav {
+    background-color: rgb(45, 46, 50);
+    border-bottom: 1px solid rgb(37, 48, 43);
+    position: fixed;
+}
+
+/* ---------- Home ---------- */
+#home, #about, #skills {
+    padding-top: 64px;
+    display: flex;
+    align-items: center;
+    color: white;
+    height: 50vh;
+}
+
+#home .introduction {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    color: rgb(27, 173, 129);
+    font-size: 4rem;
+    margin: 8px 0;
+}
+
+p {
+    margin: 8px 0;
+}
+
+.screen-graphic {
+    width: 400px;
+    height: 300px;
+    background:linear-gradient(135deg, rgba(78, 78, 83, 1) 0%, rgba(53, 54, 58, 1) 100%);
+    border-radius: 10px;
+}
+
+.screen-menubar {
+    width: 94%;
+    height: 20px;
+    border-radius: 10px;
+    background-color: rgb(107,107,104);
+    margin: 10px 3% 0 3%;
+    position: relative;
+    top: 10px;
+}
+
+.red {
+    width: 6px;
+    height: 6px;
+    background-color: red;
+    border-radius: 3px;
+}
+
+.mini-code {
+    padding: 10px 20px;
+}
+
+/* ---------- Skills outer section ---------- */
+.skills-outter-box {
+    width: 90%;
+    height: 100px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+
+
+
+footer {
+    background-color: rgb(33, 42, 62);
 }
 
 #my-section {
