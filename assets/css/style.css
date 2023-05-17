@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
-body{
+body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
-} 
+}
 
 nav {
     background-color: rgb(33, 42, 62);
@@ -17,4 +17,13 @@ footer {
 section {
     height: 100vh;
     margin: 0;
+}
+
+#my-section {
+    position: relative;
+  }
+  
+.bottom-element {
+    position: absolute;
+    bottom: 0;
 }
