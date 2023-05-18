@@ -4,55 +4,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/backgrounds.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    
     <title>My Portfolio - David Hearl</title>
 </head>
 
 <body>
     <!-- Navigation -->
     <header>
-        <nav>
-            <div class="nav-wrapper">
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center">
+                        <!-- Navigation links -->
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#education">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#work">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
 
-    <!-- Main Landing Area -->
+    <!-- Home Section -->
     <section id="home" class="light-background">
-        <div class="row">
-            <div class="col s12 m6 introduction">
-                <p>{ Web.Developer }</p>
-                <h2>Hello World !</h2>
-                <p>I am a Web Developer. I enjoy building things and turning ideas into reality</p>
-                <a href="#about">About me</a>
-            </div>
-            <div class="col s12 m6">
-                <div class="screen-graphic">
-                    <div class="screen-menubar">
-                        <span class="red"></span>
-                    </div>
-                    <p class="mini-code">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                        deserunt mollit anim id est laborum.
+        <div class="container">
+            <div class="row">
+                <div class="col sm-12 md-6 introduction justify-content-center">
+                    <p class="mb-0">
+                        <span class="color-accent">{</span>
+                        Web <span class="color-accent">.</span> Developer 
+                        <span class="color-accent">}</span>
                     </p>
+                    <h2 class="mb-8">Hello World !</h2>
+                    <p class="mb-16">I am a Web Developer. I enjoy building things and turning ideas into reality</p>
+                    <a class="about-link" href="#about">>> About me</a>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="screen-graphic mx-auto">
+                        <div class="screen-menubar">
+                            <span class="close"></span>
+                            <span class="minimise"></span>
+                            <span class="full-screen"></span>
+                        </div>
+                        <div class="mini-code-block">
+                            <div class="line t1"></div>
+                            <div class="line t4"></div>
+                            <div class="line t2"></div>
+                            <div class="line t3"></div>
+                            <div class="line t4"></div>
+                            <div class="line t2"></div>
+                            <div class="line t4"></div>
+                            <div class="line t1"></div>
+                            <div class="line t4"></div>
+                            <div class="line t3"></div>
+                            <div class="line t4"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -60,19 +94,21 @@
     
     <!-- About Section -->
     <section id="about" class="dark-background">
-        <div class="row">
-            { Introduce.MySelf }
-            <div class="col s12 m6">
-                <div class="placeholder"></div>
-            </div>
-            <div class="col s12 m6">
-                <h2>I am David,</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="container">
+            <div class="row">
+                { Introduce.MySelf }
+                <div class="col s12 m6">
+                    <div class="placeholder"></div>
+                </div>
+                <div class="col s12 m6">
+                    <h2>I am David,</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -95,7 +131,7 @@
     <section id="contact" class="dark-background"></section>
 
     <section id="my-section" class="dark-background">
-        <div class="container">
+        <div class="sphere-container">
             <!-- Class that contains the sphere spans -->
             <div class="spheres"></div>
         </div>
@@ -108,9 +144,8 @@
 
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com‘/ajax/libs/bootstrap/4.6.0/js/bootstrap.min.js"></script>
     <script src="./assets/js/snowflakes.js"></script>
 
 </body>

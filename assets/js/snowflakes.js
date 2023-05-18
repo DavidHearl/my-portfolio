@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const container = document.querySelector('.container');
+  const container = document.querySelector('.sphere-container');
   const spheresContainer = container.querySelector('.spheres');
   const sphereWidth = 5; // Width of each sphere element in pixels
   const containerWidth = container.clientWidth;
