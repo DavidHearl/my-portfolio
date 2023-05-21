@@ -9,7 +9,6 @@
 
 /* ---------- General ---------- */
 body {
-    /* min-height: 100vh; */
     margin: 0;
     padding: 0;
     color: white;
@@ -199,6 +198,15 @@ h2 {
 }
 
 /* ---------- Work ---------- */
+.job-title {
+    font-size: 1.55rem;
+}
+
+.company-name {
+    font-size: 1.1rem;
+    color:rgb(185, 185, 185);
+}
+
 ::selection {
     color: #fff;
     background: #3ea0e2;
@@ -215,7 +223,7 @@ h2 {
     position: absolute;
     height: 100%;
     width: 4px;
-    background: #fff;
+    background: rgb(245, 132, 49);
     left: 50%;
     top: 20px;
     transform: translateX(-50%);
@@ -235,10 +243,11 @@ h2 {
 
 .wrapper .row .job-card {
     background-color: rgb(37, 38, 42);
-    border-radius: 5px;
+    border-radius: 12px;
     width: calc(50% - 40px);
     padding: 20px;
     position: relative;
+    border: 1px solid black;
 }
 
 .wrapper .row .job-card::before {
@@ -263,15 +272,13 @@ h2 {
 .row .job-card .icon,
 .center-line .scroll-icon {
     position: absolute;
-    background: #f2f2f2;
+    background: rgb(204, 89, 0);
     height: 40px;
     width: 40px;
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
-    color: #3ea0e2;
-    font-size: 17px;
-    box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 0 4px rgb(245, 132, 49), inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 
 .center-line .scroll-icon {
