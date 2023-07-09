@@ -47,7 +47,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#education">Education</a>
                         </li>
-
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Contact</a>
                         </li>
@@ -61,7 +60,7 @@
     <section id="home" class="light-background">
         <div class="container">
             <div class="row">
-                <div class="col sm-12 md-6 introduction justify-content-center">
+                <div class="col sm-12 md-6 introduction">
                     <p class="mb-0">
                         <span class="color-accent">{</span>
                         Web <span class="color-accent">.</span> Developer
@@ -69,8 +68,7 @@
                     </p>
                     <h2 class="mb-8">Hello World !</h2>
                     <p class="mb-16">I am a <span class="color-accent">Web Developer</span></p>
-                    <p>I enjoy building things and turning ideas into reality</p>
-                    <a class="about-link" href="#about">>> About me</a>
+                    <p>I enjoy building things and turning ideas into reality within the virtual environment.</p>
                 </div>
                 <div class="col-sm-12 col-md-6">
                     <div class="screen-graphic mx-auto">
@@ -80,15 +78,15 @@
                             <span class="full-screen"></span>
                         </div>
                         <div class="mini-code-block">
-                            <div class="line t1"></div>
                             <div class="line t4"></div>
+                            <div class="line t1"></div>
                             <div class="line t2"></div>
                             <div class="line t3"></div>
                             <div class="line t4"></div>
                             <div class="line t2"></div>
                             <div class="line t4"></div>
                             <div class="line t1"></div>
-                            <div class="line t4"></div>
+                            <div class="line t2"></div>
                             <div class="line t3"></div>
                             <div class="line t4"></div>
                         </div>
@@ -96,13 +94,28 @@
                 </div>
             </div>
         </div>
+        <a href="#about">
+            <!-- SVG Explained: -->
+            <!-- 'M0 0' = Starting point, (0,0) -->
+            <!-- 'L30 32' = Draws a line from last point to, (30, 32) -->
+            <!-- 'L60 0' = Draws a line from last point to, (60, 0) -->
+            <svg class="arrows">
+                <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                <path class="a3" d="M0 40 L30 72 L60 40"></path>
+            </svg>
+        </a>
     </section>
 
     <!-- About Section -->
     <section id="about" class="dark-background">
         <div class="container">
+            <h3 class="section-heading text-center">
+                <span class="color-accent">{</span>
+                Introduction<span class="color-accent"> . </span>Myself
+                <span class="color-accent">}</span>
+            </h3>
             <div class="row">
-                { Introduce.MySelf }
                 <div class="col s12 m6">
                     <div class="placeholder"></div>
                 </div>
@@ -122,10 +135,13 @@
     <!-- Skills -->
     <section id="skills" class="light-background">
         <div class="container">
+            <h3 class="section-heading text-center">
+                <span class="color-accent">{</span>
+                My <span class="color-accent">.</span> Skills
+                <span class="color-accent">}</span>
+            </h3>
             <div class="row">
                 <div class="col s12">
-                    <p>{ My.Skills }</p>
-                    <h2>Some of my skills</h2>
                     <div class="container skills-list">
                         <div class="row">
                             <div class="box-container col-lg-2 col-md-4 col-sm-6">
@@ -178,42 +194,83 @@
     </section>
 
     <!-- Projects -->
-    <section id="projects" class="dark-background">
+    <section id="projects" class="dark-background d-flex justify-content-center align-items-center">
         <div class="container">
-            <p class="mb-0">
+            <h3 class="section-heading text-center">
                 <span class="color-accent">{</span>
                 My <span class="color-accent">.</span> Projects
                 <span class="color-accent">}</span>
-            </p>
-            <button type="button" class="btn project-selector">All Project</button>
-            <button type="button" class="btn project-selector">Website</button>
-            <button type="button" class="btn project-selector">Desktop Programs</button>
-            <div class="row">
-                <div class="col-sm-12 col-md-6 col-lg-2">
-                    <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
+            </h3>
+            <div class="row justify-content-center">
+                <div class="col-sm-12 text-center">
+                    <button type="button" class="btn project-selector">All Project</button>
+                    <button type="button" class="btn project-selector">Website</button>
+                    <button type="button" class="btn project-selector">Desktop Programs</button>
+                    <button type="button" class="btn project-selector">Think Tank</button>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card">
+                        <img src="./assets/images/website-images/chiropractic-website.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Chiropractic Website</h5>
+                            <hr class="underline">
                             <p class="card-text">A static website for Duncan Lightfoot's Chiropractic clinic.</p>
                             <a href="#" class="btn btn-primary">Live Preview</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-2">
-                    <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card">
+                        <img src="./assets/images/website-images/flag-game.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Chiropractic Website</h5>
+                            <h5 class="card-title">Flag Game</h5>
+                            <hr class="underline">
                             <p class="card-text">A static website for Duncan Lightfoot's Chiropractic clinic.</p>
                             <a href="#" class="btn btn-primary">Live Preview</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-2">
-                    <div class="card" style="width: 18rem;">
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card">
+                        <img src="./assets/images/website-images/connect-four.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Connect Four</h5>
+                            <hr class="underline">
+                            <p class="card-text">A static website for Duncan Lightfoot's Chiropractic clinic.</p>
+                            <a href="#" class="btn btn-primary">Live Preview</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card">
+                        <img src=".." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Inventor Blog</h5>
+                            <hr class="underline">
+                            <p class="card-text">A static website for Duncan Lightfoot's Chiropractic clinic.</p>
+                            <a href="#" class="btn btn-primary">Live Preview</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card">
+                        <img src="./assets/images/website-images/sweet-shop.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Sweet Shop</h5>
+                            <hr class="underline">
+                            <p class="card-text">A static website for Duncan Lightfoot's Chiropractic clinic.</p>
+                            <a href="#" class="btn btn-primary">Live Preview</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card">
                         <img src="..." class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Chiropractic Website</h5>
+                            <h5 class="card-title">My Portfolio</h5>
+                            <hr class="underline">
                             <p class="card-text">A static website for Duncan Lightfoot's Chiropractic clinic.</p>
                             <a href="#" class="btn btn-primary">Live Preview</a>
                         </div>
@@ -226,6 +283,11 @@
     <!-- Work -->
     <section id="work" class="light-background">
         <div class="container">
+            <h3 class="section-heading text-center">
+                <span class="color-accent">{</span>
+                Work<span class="color-accent"> . </span>History
+                <span class="color-accent">}</span>
+            </h3>
             <div class="wrapper">
                 <div class="center-line">
                     <a href="#" class="scroll-icon"></a>
@@ -317,12 +379,28 @@
 
     <!-- Education -->
     <section id="education" class="dark-background">
+        <div class="container">
+            <h3 class="section-heading text-center">
+                <span class="color-accent">{</span>
+                My<span class="color-accent"> . </span>Education
+                <span class="color-accent">}</span>
+            </h3>
+            <div class="row">
+                <div class="col">
 
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Contact -->
     <section id="contact" class="light-background">
         <div class="container">
+            <h3 class="section-heading text-center">
+                <span class="color-accent">{</span>
+                Contact<span class="color-accent"> . </span>Me
+                <span class="color-accent">}</span>
+            </h3>
             <div class="row justify-content-center">
                 <div class="col-md-6">
                     <div class="contact-form">
@@ -361,12 +439,12 @@
     </footer>
 
     <!-- <section id="my-section" class="dark-background">
-    <div class="sphere-container">
-        <div class="spheres"></div>
-    </div>
-    <svg class="bottom-element" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 48" preserveAspectRatio="none">
-        <path fill="white" d="M0,24 C360,60,540,-12,720,24 L720,48 L0,48 Z" />
-    </svg>
+        <div class="sphere-container">
+            <div class="spheres"></div>
+        </div>
+        <svg class="bottom-element" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 48" preserveAspectRatio="none">
+            <path fill="white" d="M0,24 C360,60,540,-12,720,24 L720,48 L0,48 Z" />
+        </svg>
     </section> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

@@ -1,86 +1,133 @@
-/* ---------- Path Arrow ---------- */
+/* ---------- Scroll Animation ---------- */
+.arrows {
+	width: 64px;
+	height: 72px;
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+	bottom: 92px;
+  }
+  
+  .arrows path {
+	stroke: rgb(135,135,135);
+	fill: transparent;
+	stroke-width: 2px;  
+	animation: arrow 4s infinite;
+	-webkit-animation: arrow 4s infinite; 
+  }
+  
+  @keyframes arrow
+  {
+	0% {opacity:0}
+	40% {opacity:1}
+	80% {opacity:0}
+	100% {opacity:0}
+  }
+  
+  @-webkit-keyframes arrow
+  {
+	0% {opacity:0}
+	40% {opacity:1}
+	80% {opacity:0}
+	100% {opacity:0}
+  }
+  
+  .arrows path.a1 {
+	animation-delay:-1.5s;
+	-webkit-animation-delay:-1.5s;
+  }
+  
+  .arrows path.a2 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s;
+  }
+  
+  .arrows path.a3 { 
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s;
+  }
 
 
 /* ---------- Animated Spheres ---------- */
 .sphere-container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
 }
 
 .spheres {
-  position: relative;
-  display: flex;
+	position: relative;
+	display: flex;
 }
 
 .spheres span {
-  position: relative;
-  width: 4px;
-  height: 4px;
-  background: white;
-  margin: 0 1px;
-  border-radius: 50%;
-  box-shadow: 0 0 0 1px rgb(200, 200, 200);
-  visibility: hidden;
-  animation: animate 30s linear infinite;
-  animation-duration: var(--duration);
-  animation-delay: var(--delay);
+	position: relative;
+	width: 4px;
+	height: 4px;
+	background: white;
+	margin: 0 1px;
+	border-radius: 50%;
+	box-shadow: 0 0 0 1px rgb(200, 200, 200);
+	visibility: hidden;
+	animation: animate 30s linear infinite;
+	animation-duration: var(--duration);
+	animation-delay: var(--delay);
 }
 
 .spheres span:nth-child(even) {
-  background: rgb(181, 241, 255);
-  box-shadow: 0 0 0 1px rgb(93, 176, 220);
+	background: rgb(181, 241, 255);
+	box-shadow: 0 0 0 1px rgb(93, 176, 220);
 }
 
 @keyframes animate {
-  0% {
-    visibility: hidden;
-    transform: translateY(-5vh) scale(0.25) translateX(0);
-  }
+	0% {
+		visibility: hidden;
+		transform: translateY(-5vh) scale(0.25) translateX(0);
+	}
 
-  1% {
-    visibility: visible;
-    transform: translateY(1vh) scale(0.25) translateX(0);
-  }
+	1% {
+		visibility: visible;
+		transform: translateY(1vh) scale(0.25) translateX(0);
+	}
 
-  10% {
-    transform: translateY(10vh) scale(0.30) translateX(calc(var(--sway) * 1)) rotate(-15deg);
-  }
+	10% {
+		transform: translateY(10vh) scale(0.30) translateX(calc(var(--sway) * 1)) rotate(-15deg);
+	}
 
-  20% {
-    transform: translateY(20vh) scale(0.35) translateX(calc(var(--sway) * -1)) rotate(15deg);
-  }
+	20% {
+		transform: translateY(20vh) scale(0.35) translateX(calc(var(--sway) * -1)) rotate(15deg);
+	}
 
-  30% {
-    transform: translateY(30vh) scale(0.40) translateX(calc(var(--sway) * 1)) rotate(-15deg);
-  }
+	30% {
+		transform: translateY(30vh) scale(0.40) translateX(calc(var(--sway) * 1)) rotate(-15deg);
+	}
 
-  40% {
-    transform: translateY(40vh) scale(0.45) translateX(calc(var(--sway) * -1)) rotate(15deg);
-  }
+	40% {
+		transform: translateY(40vh) scale(0.45) translateX(calc(var(--sway) * -1)) rotate(15deg);
+	}
 
-  50% {
-    transform: translateY(50vh) scale(0.50) translateX(calc(var(--sway) * 1)) rotate(-15deg);
-  }
+	50% {
+		transform: translateY(50vh) scale(0.50) translateX(calc(var(--sway) * 1)) rotate(-15deg);
+	}
 
-  60% {
-    transform: translateY(60vh) scale(0.55) translateX(calc(var(--sway) * -1)) rotate(15deg);
-  }
+	60% {
+		transform: translateY(60vh) scale(0.55) translateX(calc(var(--sway) * -1)) rotate(15deg);
+	}
 
-  70% {
-    transform: translateY(70vh) scale(0.60) translateX(calc(var(--sway) * 1)) rotate(-15deg);
-  }
+	70% {
+		transform: translateY(70vh) scale(0.60) translateX(calc(var(--sway) * 1)) rotate(-15deg);
+	}
 
-  80% {
-    transform: translateY(80vh) scale(0.65) translateX(calc(var(--sway) * -1)) rotate(15deg);
-  }
+	80% {
+		transform: translateY(80vh) scale(0.65) translateX(calc(var(--sway) * -1)) rotate(15deg);
+	}
 
-  90% {
-    transform: translateY(90vh) scale(0.70) translateX(calc(var(--sway) * 1)) rotate(-15deg);
-  }
+	90% {
+		transform: translateY(90vh) scale(0.70) translateX(calc(var(--sway) * 1)) rotate(-15deg);
+	}
 
-  100% {
-    transform: translateY(100vh) scale(0.75) translateX(0) rotate(0);
-  }
+	100% {
+		transform: translateY(100vh) scale(0.75) translateX(0) rotate(0);
+	}
 }
