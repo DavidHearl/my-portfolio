@@ -37,6 +37,7 @@ section {
 .navbar {
     background-color: rgb(45, 46, 50);
     border-bottom: 1px solid black;
+    justify-content: center;
 }
 
 .navbar a {
@@ -50,6 +51,21 @@ section {
 
 .navbar a:active {
     color: rgb(27, 173, 129);
+}
+
+.navbar .active a {
+    color: rgb(27, 173, 129);
+    border-bottom: 1px solid salmon;
+}
+
+.navbar .active a:hover {
+    border-bottom: 1px solid salmon;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    margin: 2px 8px 8px 8px;
+    padding-bottom: 0;
+    font-size: 1.1rem;
 }
 
 /* ---------- Scroll Bar ---------- */
