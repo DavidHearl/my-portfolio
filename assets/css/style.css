@@ -242,7 +242,7 @@ h2 {
     color: white;
     background-color: rgb(45, 46, 50);
     border-radius: 21px;
-    border: 1px solid rgb(170,170,170);
+    border: 1px solid rgb(170, 170, 170);
     margin: 12px;
     margin-bottom: 32px;
     padding: 10px 24px;
@@ -464,4 +464,15 @@ h2 {
 /* ---------- Footer ---------- */
 footer {
     background-color: rgb(33, 42, 62);
+}
+
+.center-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.small-text {
+    font-size: 12px;
+    color: #aaa;
+    text-align: center;
 }
