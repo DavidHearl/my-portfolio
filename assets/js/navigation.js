@@ -34,18 +34,14 @@ $(document).ready(function () {
         var target = $(this).attr('href');
         var offset = $(target).offset().top - navHeight + 1;
         $('html, body').animate({ scrollTop: offset }, 500);
-    });
-});
 
-$(document).ready(function () {
-    // Close navbar on link click
-    $('.navbar-nav > li > a').on('click', function () {
+        // Close navbar and toggle hamburger icon
         $('.navbar-collapse').collapse('hide');
+        $('#nav-icon').removeClass('open');
     });
-});
 
-$(document).ready(function(){
-	$('#nav-icon').click(function(){
-		$(this).toggleClass('open');
-	});
+    // Toggle hamburger icon
+    $('#nav-icon').click(function () {
+        $(this).toggleClass('open');
+    });
 });
