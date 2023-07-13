@@ -400,7 +400,7 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="light-background">
+    <section id="contact" class="light-background d-flex align-items-center">
         <div class="container">
             <h3 class="section-heading text-center">
                 <span class="color-accent">{</span>
@@ -411,27 +411,30 @@
                 <div class="col-md-6">
                     <div class="contact-form">
                         <form>
-                            <div class="form-group">
+                            <div class="form-floating mb-3">
+                                <input type="text" id="name" name="name" class="form-control" placeholder="Name" required>
                                 <label for="name">Name:</label>
-                                <input type="text" id="name" name="name" class="form-control" required>
                             </div>
-
-                            <div class="form-group">
+                            <div class="form-floating mb-3">
+                                <input type="email" id="email" name="email" class="form-control" placeholder="Email" required>
                                 <label for="email">Email:</label>
-                                <input type="email" id="email" name="email" class="form-control" required>
                             </div>
-
-                            <div class="form-group">
+                            <div class="form-floating mb-3">
+                                <input type="phone" id="phone" name="phone" class="form-control" placeholder="Phone Number" required>
+                                <label for="phone">Phone Number:</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject" required>
                                 <label for="subject">Subject:</label>
-                                <input type="text" id="subject" name="subject" class="form-control" required>
                             </div>
-
-                            <div class="form-group">
+                            <div class="form-floating mb-3">
+                                <textarea id="message" name="message" class="form-control" placeholder="Message" required></textarea>
                                 <label for="message">Message:</label>
-                                <textarea id="message" name="message" class="form-control" required></textarea>
                             </div>
-
-                            <button type="submit" class="contact-button">Submit</button>
+                            <div class="form-group d-flex justify-content-between mb-3">
+                                <button type="button" class="reset-button">Reset</button>
+                                <button type="submit" class="contact-button">Submit</button>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -464,7 +467,6 @@
                     </div>
                     <p class="small-text">Number: 123456789</p>
                     <p class="small-text">Email: example@example.com</p>
-
                 </div>
             </div>
         </div>

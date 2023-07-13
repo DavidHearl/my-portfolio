@@ -74,7 +74,6 @@ section {
 }
 
 /* ---------- Hamburger Menu ---------- */
-
 #nav-icon {
     width: 30px;
     height: 28px;
@@ -371,7 +370,7 @@ h2 {
     position: absolute;
     height: 100%;
     width: 4px;
-    background: rgb(245, 132, 49);
+    background: rgb(27, 173, 129);
     left: 50%;
     top: 20px;
     transform: translateX(-50%);
@@ -420,13 +419,13 @@ h2 {
 .row .job-card .icon,
 .center-line .scroll-icon {
     position: absolute;
-    background: rgb(204, 89, 0);
+    background: rgb(20, 134, 100);
     height: 40px;
     width: 40px;
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
-    box-shadow: 0 0 0 4px rgb(245, 132, 49), inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 0 4px rgb(27, 173, 129), inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 
 .center-line .scroll-icon {
@@ -512,35 +511,63 @@ h2 {
 }
 
 /* ---------- Contact ---------- */
-.contact-form {
-    max-width: 100%;
-    margin: 0 auto;
+.form-group {
+    position: relative;
 }
 
-.contact-form label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
+.form-label {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    transform: translateY(-50%);
+    color: rgb(220, 220, 220);
+    transition: top 0.3s, font-size 0.3s;
+    pointer-events: none;
 }
 
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
+.form-control {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
-    background: none;
-    border: 1px solid rgb(93, 92, 96);
+    background-color: rgb(37, 38, 42);
+    border: 1px solid rgb(57, 58, 62);
     color: rgb(220, 220, 220);
 }
 
-.contact-form textarea {
+.form-control:focus + .form-label,
+.form-control:valid + .form-label {
+    top: -25px;
+    font-size: 10px;
+}
+
+textarea {
     height: 120px;
+}
+
+.contact-button, .reset-button {
+    width: 48%;
+    background-color: rgb(27, 173, 129);
+    border-radius: 6px;
+    border: none;
+    padding: 8px;
+}
+
+#message {
+    height: 180px;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form input[type="phone"]:focus,
+.contact-form textarea:focus {
+    background: rgb(37, 38, 42);
+    border-color: rgb(57, 58, 62);
+    color: white;
 }
 
 .contact-form input[type="submit"] {
     background-color: rgb(220, 220, 220);
-    color: rgb(37, 38, 42);
+    color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -548,14 +575,6 @@ h2 {
 
 .contact-form input[type="submit"]:hover {
     background-color: rgb(204, 204, 204);
-}
-
-.contact-button {
-    width: 100%;
-    background-color: rgb(27, 173, 129);
-    border-radius: 20px;
-    border: none;
-    padding: 8px;
 }
 
 /* ---------- Footer ---------- */
