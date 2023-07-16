@@ -510,6 +510,49 @@ h2 {
     }
 }
 
+/* ---------- Education ---------- */
+.timeline {
+    position: relative;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.timeline-content {
+    padding-left: 30px;
+}
+
+.timeline-content:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background-color: rgb(27, 173, 129);
+}
+
+.timeline-content h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(220, 220, 220);
+    margin-bottom: 10px;
+}
+
+.timeline-content p {
+    margin: 0;
+    color: rgb(220, 220, 220);
+    margin-bottom: 5px;
+}
+
+.date {
+    float: right;
+}
+
+
 /* ---------- Contact ---------- */
 .form-group {
     position: relative;
@@ -534,8 +577,8 @@ h2 {
     color: rgb(220, 220, 220);
 }
 
-.form-control:focus + .form-label,
-.form-control:valid + .form-label {
+.form-control:focus+.form-label,
+.form-control:valid+.form-label {
     top: -25px;
     font-size: 10px;
 }
@@ -544,7 +587,8 @@ textarea {
     height: 120px;
 }
 
-.contact-button, .reset-button {
+.contact-button,
+.reset-button {
     width: 48%;
     background-color: rgb(27, 173, 129);
     border-radius: 6px;
