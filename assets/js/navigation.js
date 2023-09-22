@@ -3,7 +3,7 @@ $(document).ready(function () {
     var navHeight = $('nav').outerHeight();
 
     // Store section IDs in an array
-    var sectionIds = ['#home', '#about', '#skills', '#projects', '#work', '#education', '#contact'];
+    var sectionIds = ['#home', '#about', '#projects', '#work', '#education', '#contact'];
 
     // Update the active navigation item based on the section in view
     function updateActiveNavItem() {

@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 
 .placeholder {
     width: 50px;
@@ -9,6 +11,8 @@
 
 /* ---------- General ---------- */
 body {
+    /* font-family: monospace; */
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     color: white;
@@ -21,16 +25,22 @@ section {
 }
 
 .light-background {
-    background-color: rgb(45, 46, 50);
+    background-color: rgb(33, 34, 38);
 }
 
 .dark-background {
     /* background: linear-gradient(135deg, rgba(7, 22, 53, 1) 0%, rgba(57, 72, 103, 1) 50%, rgba(107, 122, 153, 1) 100%); */
-    background-color: rgb(37, 38, 42);
+    background-color: rgb(23, 24, 28);
 }
 
 .color-accent {
     color: rgb(221, 70, 77);
+}
+
+.form-check {
+    margin-top: 2px;
+    margin-left: 24px;
+    margin-bottom: 0;
 }
 
 /* ---------- Navigation ---------- */
@@ -45,27 +55,25 @@ section {
 }
 
 .navbar a:hover {
-    color: rgb(27, 173, 129);
-    border-bottom: 1px solid salmon;
+    color: #6A98F0;
 }
 
 .navbar a:active {
-    color: rgb(27, 173, 129);
+    color: #6D83F2;
 }
 
 .navbar .active a {
-    color: rgb(27, 173, 129);
-    border-bottom: 1px solid salmon;
+    color: #6A98F0;
 }
 
 .navbar .active a:hover {
-    border-bottom: 1px solid salmon;
+    color: white;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-    margin: 2px 8px 8px 8px;
-    padding-bottom: 0;
-    font-size: 1.1rem;
+    margin: 8px 12px 6px 12px;
+    padding: 0 4px;
+    font-size: 0.95rem;
 }
 
 .navbar-toggler {
@@ -148,25 +156,76 @@ section {
     left: 50%;
 }
 
+/* ------ Light / Dark Mode ------- */
+.switch-label {
+    width: 150px;
+}
+
+.switch-label i {
+    margin-right: 5px;
+}
+
+.switch-toggle {
+    height: 30px;
+}
+
+.switch-toggle input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    z-index: -2;
+}
+
+.switch-toggle input[type="checkbox"]+label {
+    position: relative;
+    display: inline-block;
+    width: 75px;
+    height: 24px;
+    border-radius: 12px;
+    margin-top: 4px;
+    margin-left: 24px;
+    cursor: pointer;
+    background-color: rgb(199, 199, 199);
+}
+
+.switch-toggle input[type="checkbox"]+label::before {
+    position: absolute;
+    content: 'DARK';
+    font-size: 11px;
+    text-align: center;
+    line-height: 25px;
+    top: 1px;
+    left: 2px;
+    width: 48px;
+    height: 22px;
+    border-radius: 11px;
+    background-color: #888888;
+    transition: .5s ease-in-out;
+}
+
+.switch-toggle input[type="checkbox"]:checked+label::before {
+    left: 40%;
+    content: 'LIGHT';
+    color: white;
+    background-color: #00b33c;
+}
+
+
 /* ---------- Scroll Bar ---------- */
 body::-webkit-scrollbar {
     width: 8px;
     background-color: rgb(45, 46, 50);
 }
 
-/* Style the scrollbar thumb */
 body::-webkit-scrollbar-thumb {
     background-color: #888;
     border-radius: 4px;
     border-left: 1px solid black;
 }
 
-/* Change the color of the scrollbar thumb on hover */
 body::-webkit-scrollbar-thumb:hover {
     background-color: #555;
 }
 
-/* Add a subtle shadow to the scrollbar thumb */
 body::-webkit-scrollbar-thumb:active {
     background-color: #555;
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
@@ -175,7 +234,6 @@ body::-webkit-scrollbar-thumb:active {
 /* ---------- Home ---------- */
 #home,
 #about {
-    padding-top: 64px;
     align-items: center;
 }
 
@@ -186,11 +244,20 @@ body::-webkit-scrollbar-thumb:active {
     flex-direction: column;
 }
 
+.cv-download {
+    width: 145px;
+    border-radius: 12px;
+    padding: 6px;
+    border: none;
+    background: linear-gradient(134deg, #6A98F0 0%, #4961DC 99%);
+    margin-bottom: 12px;
+}
+
 h2 {
     color: rgb(27, 173, 129);
     font-size: 4rem;
-    font-weight: 600;
-    margin: 8px 0;
+    font-weight: 900;
+    letter-spacing: 1px;
 }
 
 .introduction p {

@@ -20,7 +20,7 @@
     <!-- Navigation -->
     <header>
         <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container-fluid">
+            <div class="container">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -32,16 +32,13 @@
                     </div>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav mr-auto">
                         <!-- Navigation links -->
                         <li class="nav-item">
                             <a class="nav-link" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skills">Skills</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#projects">Projects</a>
@@ -56,24 +53,89 @@
                             <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
+                    <div class="switch-holder">
+                        <div class="switch-toggle">
+                            <input type="checkbox" id="bluetooth">
+                            <label for="bluetooth"></label>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
 
+    <style>
+       .switch-label {
+            width: 150px;
+        }
+
+        .switch-label i {
+            margin-right: 5px;
+        }
+
+        .switch-toggle {
+            height: 30px;
+        }
+
+        .switch-toggle input[type="checkbox"] {
+            position: absolute;
+            opacity: 0;
+            z-index: -2;
+        }
+
+        .switch-toggle input[type="checkbox"] + label {
+            position: relative;
+            display: inline-block;
+            width: 75px;
+            height: 24px;
+            border-radius: 12px;
+            margin-top: 4px;
+            margin-left: 24px;
+            cursor: pointer;
+            background-color: rgb(199, 199, 199);
+        }
+
+        .switch-toggle input[type="checkbox"] + label::before {
+            position: absolute;
+            content: 'DARK';
+            font-size: 11px;
+            text-align: center;
+            line-height: 25px;
+            top: 1px;
+            left: 2px;
+            width: 48px;
+            height: 22px;
+            border-radius: 11px;
+            background-color: #888888;
+            transition: .5s ease-in-out;
+        }
+
+        .switch-toggle input[type="checkbox"]:checked + label::before {
+            left: 40%;
+            content: 'LIGHT';
+            color: white;
+            background-color: #00b33c;
+        }
+    </style>
+
     <!-- Home Section -->
-    <section id="home" class="light-background">
+    <section id="home" class="dark-background">
         <div class="container">
             <div class="row">
                 <div class="col sm-12 md-6 introduction">
-                    <p class="mb-0">
-                        <span class="color-accent">{</span>
-                        Web <span class="color-accent">.</span> Developer
-                        <span class="color-accent">}</span>
-                    </p>
-                    <h2 class="mb-8">Hello World !</h2>
-                    <p class="mb-16">I am a <span class="color-accent">Web Developer</span></p>
+                    <p>Hello, I am</p>
+                    <h2>DAVID HEARL</h2>
+                    <p>I am a <span class="color-accent">Web Developer</span></p>
                     <p>I enjoy building things and turning ideas into reality within the virtual environment.</p>
+                    <button class="cv-download">Download CV</button>
+                    <!-- LinkedIn Icon -->
+                    <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <!-- GitHub Icon -->
+                    <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
                 </div>
                 <div class="col-sm-12 col-md-6">
                     <div class="screen-graphic mx-auto">
@@ -113,7 +175,7 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="dark-background">
+    <section id="about" class="light-background">
         <div class="container">
             <h3 class="section-heading text-center">
                 <span class="color-accent">{</span>
@@ -132,67 +194,6 @@
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="light-background">
-        <div class="container">
-            <h3 class="section-heading text-center">
-                <span class="color-accent">{</span>
-                My <span class="color-accent">.</span> Skills
-                <span class="color-accent">}</span>
-            </h3>
-            <div class="row">
-                <div class="col s12">
-                    <div class="container skills-list">
-                        <div class="row">
-                            <div class="box-container col-lg-2 col-md-4 col-sm-6">
-                                <div class="square-box">
-                                    <img class="skill-icons" src="assets/images/icons/html.png" alt="">
-                                </div>
-                            </div>
-                            <div class="box-container col-lg-2 col-md-4 col-sm-6">
-                                <div class="square-box">
-                                    <img class="skill-icons" src="assets/images/icons/css.png" alt="">
-                                </div>
-                            </div>
-                            <div class="box-container col-lg-2 col-md-4 col-sm-6">
-                                <div class="square-box"></div>
-                            </div>
-                            <div class="box-container col-lg-2 col-md-4 col-sm-6">
-                                <div class="square-box"></div>
-                            </div>
-                            <div class="box-container col-lg-2 col-md-4 col-sm-6">
-                                <div class="square-box"></div>
-                            </div>
-                            <div class="box-container col-lg-2 col-md-4 col-sm-6">
-                                <div class="square-box"></div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="box-container col-lg-2 col-md-4 col-sm-6">
-                                <div class="square-box"></div>
-                            </div>
-                            <div class="box-container col-lg-2 col-md-4 col-sm-6">
-                                <div class="square-box"></div>
-                            </div>
-                            <div class="box-container col-lg-2 col-md-4 col-sm-6">
-                                <div class="square-box"></div>
-                            </div>
-                            <div class="box-container col-lg-2 col-md-4 col-sm-6">
-                                <div class="square-box"></div>
-                            </div>
-                            <div class="box-container col-lg-2 col-md-4 col-sm-6">
-                                <div class="square-box"></div>
-                            </div>
-                            <div class="box-container col-lg-2 col-md-4 col-sm-6">
-                                <div class="square-box"></div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
