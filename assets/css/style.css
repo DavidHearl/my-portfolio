@@ -11,7 +11,6 @@
 
 /* ---------- General ---------- */
 body {
-    /* font-family: monospace; */
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
@@ -79,6 +78,10 @@ section {
 .navbar-toggler {
     border: none;
     padding: 0;
+}
+
+.navbar-collapse {
+    justify-content: end;
 }
 
 /* ---------- Hamburger Menu ---------- */
@@ -178,37 +181,34 @@ section {
 .switch-toggle input[type="checkbox"]+label {
     position: relative;
     display: inline-block;
-    width: 75px;
+    width: 83px;
     height: 24px;
-    border-radius: 12px;
+    border-radius: 15px;
     margin-top: 4px;
-    margin-left: 24px;
+    margin-left: 12px;
     cursor: pointer;
-    background-color: rgb(199, 199, 199);
+    background-color: rgb(75, 75, 75);
 }
 
 .switch-toggle input[type="checkbox"]+label::before {
     position: absolute;
     content: 'DARK';
-    font-size: 11px;
+    font-size: 10px;
     text-align: center;
-    line-height: 25px;
-    top: 1px;
+    line-height: 21px;
+    top: 2px;
     left: 2px;
     width: 48px;
-    height: 22px;
-    border-radius: 11px;
-    background-color: #888888;
-    transition: .5s ease-in-out;
+    height: 20px;
+    border-radius: 14px;
+    background-color: #4961DC;
+    transition: .3s ease-in-out;
 }
 
 .switch-toggle input[type="checkbox"]:checked+label::before {
     left: 40%;
     content: 'LIGHT';
-    color: white;
-    background-color: #00b33c;
 }
-
 
 /* ---------- Scroll Bar ---------- */
 body::-webkit-scrollbar {
@@ -245,36 +245,44 @@ body::-webkit-scrollbar-thumb:active {
 }
 
 .cv-download {
-    width: 145px;
+    width: 200px;
     border-radius: 12px;
-    padding: 6px;
+    padding: 12px;
     border: none;
     background: linear-gradient(134deg, #6A98F0 0%, #4961DC 99%);
-    margin-bottom: 12px;
+    margin: 24px 0;
+    color: white;
+}
+
+.fab {
+    font-size: 36px;
+    margin: 12px;
+    color: #4961DC;
 }
 
 h2 {
-    color: rgb(27, 173, 129);
+    margin: 0;
     font-size: 4rem;
     font-weight: 900;
     letter-spacing: 1px;
 }
 
-.introduction p {
-    margin: 8px 0;
+.home-text {
+    margin: 0;
     font-size: 1.2rem;
     font-weight: 300;
 }
 
-.about-link {
-    margin-top: 16px;
-    color: rgb(221, 70, 77);
+.home-paragraph {
+    margin: 8px 0 12px 0;
+    font-size: 1.2rem;
+    font-weight: 300;
 }
 
 .screen-graphic {
     width: 420px;
-    height: 315px;
-    background: linear-gradient(135deg, rgba(78, 78, 83, 1) 0%, rgba(53, 54, 58, 1) 100%);
+    height: 280px;
+    background: linear-gradient(135deg, rgb(58, 58, 63), rgb(48, 48, 52));
     border-radius: 10px;
 }
 
@@ -313,37 +321,35 @@ h2 {
 }
 
 .mini-code-block {
-    margin-top: 20px;
+    margin-top: 18px;
+    font-family: monospace;
+}
+
+.mini-text-block {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    padding: 0;
+    margin: 2px 16px;
 }
 
-.line {
-    margin-left: 3%;
-    height: 12px;
-    border-radius: 6px;
-    display: inline-block;
-    margin-bottom: 13px;
+.mini-text-gray {
+    color: gray;
 }
 
-.t1 {
-    background-color: rgb(182, 186, 209, 0.5);
-    width: 90%;
+.mini-text-dark-blue {
+    color: darkblue;
 }
 
-.t2 {
-    background-color: rgb(180, 147, 84, 0.5);
-    width: 40%;
+.mini-text-light-blue {
+    color: lightblue;
 }
 
-.t3 {
-    background-color: rgb(239, 144, 154, 0.5);
-    width: 60%;
+.mini-text-white {
+    color: white;
 }
 
-.t4 {
-    background-color: rgb(105, 207, 236, 0.5);
-    width: 80%;
+.mini-text-yellow {
+    color: yellow;
 }
 
 /* ---------- Skills outer section ---------- */

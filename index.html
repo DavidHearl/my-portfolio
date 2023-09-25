@@ -64,79 +64,35 @@
         </nav>
     </header>
 
-    <style>
-       .switch-label {
-            width: 150px;
-        }
-
-        .switch-label i {
-            margin-right: 5px;
-        }
-
-        .switch-toggle {
-            height: 30px;
-        }
-
-        .switch-toggle input[type="checkbox"] {
-            position: absolute;
-            opacity: 0;
-            z-index: -2;
-        }
-
-        .switch-toggle input[type="checkbox"] + label {
-            position: relative;
-            display: inline-block;
-            width: 75px;
-            height: 24px;
-            border-radius: 12px;
-            margin-top: 4px;
-            margin-left: 24px;
-            cursor: pointer;
-            background-color: rgb(199, 199, 199);
-        }
-
-        .switch-toggle input[type="checkbox"] + label::before {
-            position: absolute;
-            content: 'DARK';
-            font-size: 11px;
-            text-align: center;
-            line-height: 25px;
-            top: 1px;
-            left: 2px;
-            width: 48px;
-            height: 22px;
-            border-radius: 11px;
-            background-color: #888888;
-            transition: .5s ease-in-out;
-        }
-
-        .switch-toggle input[type="checkbox"]:checked + label::before {
-            left: 40%;
-            content: 'LIGHT';
-            color: white;
-            background-color: #00b33c;
-        }
-    </style>
-
     <!-- Home Section -->
     <section id="home" class="dark-background">
         <div class="container">
             <div class="row">
-                <div class="col sm-12 md-6 introduction">
-                    <p>Hello, I am</p>
+                <div class="col sm-12 md-6">
+                    <p class="home-text">Hello, I'm</p>
                     <h2>DAVID HEARL</h2>
-                    <p>I am a <span class="color-accent">Web Developer</span></p>
-                    <p>I enjoy building things and turning ideas into reality within the virtual environment.</p>
-                    <button class="cv-download">Download CV</button>
-                    <!-- LinkedIn Icon -->
-                    <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <!-- GitHub Icon -->
-                    <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-github"></i>
-                    </a>
+                    <p class="home-text">I am a <span class="color-accent">Web Developer</span></p>
+                    <p class="home-paragraph">I enjoy building things and turning ideas into reality within the virtual environment.</p>
+                    <div>
+                        <button class="cv-download">Download Resume</button>
+                        <a href="https://www.linkedin.com/in/david-hearl-7932b618a" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/DavidHearl" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                        </a> 
+                    </div>
+                    
                 </div>
+                <!-- const person = {
+                    firstName: "David",
+                    lastName: "Hearl",
+                    age: "25",
+                    hobbies: ["Rugby", "Computers"],
+                    currentOccupation: "Designer"
+                    email: "david.hearl@outlook.com
+                    phone: 07930828560
+                }; -->
                 <div class="col-sm-12 col-md-6">
                     <div class="screen-graphic mx-auto">
                         <div class="screen-menubar">
@@ -145,17 +101,22 @@
                             <span class="full-screen"></span>
                         </div>
                         <div class="mini-code-block">
-                            <div class="line t4"></div>
-                            <div class="line t1"></div>
-                            <div class="line t2"></div>
-                            <div class="line t3"></div>
-                            <div class="line t4"></div>
-                            <div class="line t2"></div>
-                            <div class="line t4"></div>
-                            <div class="line t1"></div>
-                            <div class="line t2"></div>
-                            <div class="line t3"></div>
-                            <div class="line t4"></div>
+                            <div class="mini-text-block">
+                                <p class="mini-text-gray">1 </p>
+                                <p class="mini-text-dark-blue">const </p>
+                                <p class="mini-text-light-blue">person </p>
+                                <p class="mini-text-white">= </p>
+                                <p class="mini-text-yellow">{ </p>
+                            </div>
+                            
+                            <p class="mini-text">2  firstName: "David",</p>
+                            <p class="mini-text">3  lastName: "Hearl",</p>
+                            <p class="mini-text">4  age: "25",</p>
+                            <p class="mini-text">5  hobbies: ["Rugby", "Computers"],</p>
+                            <p class="mini-text">6  currentOccupation: "Designer"</p>
+                            <p class="mini-text">7  email: "david.hearl@outlook.com</p>
+                            <p class="mini-text">8  phone: 07930828560</p>
+                            <p class="mini-text">9  };</p>
                         </div>
                     </div>
                 </div>
