@@ -350,11 +350,11 @@ h2 {
 }
 
 .mini-text-dark-blue {
-    color: darkblue;
+    color: rgb(83, 151, 210);
 }
 
 .mini-text-light-blue {
-    color: lightblue;
+    color: rgb(39, 159, 250);
 }
 
 .mini-text-white {
@@ -362,15 +362,15 @@ h2 {
 }
 
 .mini-text-yellow {
-    color: yellow;
+    color: rgb(241, 207, 43);
 }
 
 .mini-text-aqua {
-    color: aqua;
+    color: rgb(150, 217, 251);
 }
 
 .mini-text-orange {
-    color: orange;
+    color: rgb(211, 147, 123);
 }
 
 .mini-text-white {
@@ -378,11 +378,15 @@ h2 {
 }
 
 .mini-text-green {
-    color: lime;
+    color: rgb(144, 207, 140);
 }
 
 .indent-1 {
     margin-left: 24px;
+}
+
+.word-spacing {
+    margin-left: 4px;
 }
 
 /* ---------- Skills outer section ---------- */
