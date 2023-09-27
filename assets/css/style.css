@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+
 /* ---------- General ---------- */
 body {
     font-family: 'Montserrat', sans-serif;
@@ -404,13 +405,15 @@ h2 {
 
 .speciality .btn {
     background-color: #4961DC;
+    border: none;
+    padding: 4px 16px;
 }
 
-.speciality > h5 {
+.speciality>h5 {
     margin-bottom: 16px;
 }
 
-.speciality > p {
+.speciality>p {
     margin: 16px 0;
 }
 
@@ -426,20 +429,38 @@ h2 {
 
 .card {
     width: 100%;
-    margin-bottom: 32px;
+    margin-bottom: 48px;
+    margin-top: 16px;
     border-radius: 16px;
+    border: none;
+    background-color: #303030;
 }
 
 .projects {
     border-radius: 16px;
     padding: 24px;
-    background-color: #303030;
     color: white;
 }
 
-.projects > h4 {
+.project-row {
+    margin-top: 12px;
+}
+
+.projects>h4 {
     margin-bottom: 32px;
     font-weight: 700;
+}
+
+.project-image {
+    width: 100%;
+    border-radius: 4px;
+    /* float: right; */
+}
+
+.projects .btn {
+    background-color: #4961DC;
+    border: none;
+    padding: 4px 16px;
 }
 
 /* ---------- Work ---------- */
