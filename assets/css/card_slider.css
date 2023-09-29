@@ -3,8 +3,8 @@
 }
 
 .slider i {
-    top: 100px;
-    height: 166px;
+    top: 228px;
+    height: 190px;
     width: 44px;
     cursor: pointer;
     font-size: 1.25rem;
@@ -12,6 +12,7 @@
     text-align: center;
     line-height: 166px;
     transform: translateY(-50%);
+    border: 1px solid white;
 }
 
 .slider i:active {
@@ -67,6 +68,10 @@
 
 .fa-solid {
     color: white;
+}
+
+#left {
+    left: -32px;
 }
 
 @media screen and (max-width: 900px) {
