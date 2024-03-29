@@ -20,10 +20,6 @@ section {
     background-color: rgb(33, 34, 38);
 }
 
-.color-accent {
-    color: rgb(221, 70, 77);
-}
-
 .form-check {
     margin-top: 2px;
     margin-left: 24px;
@@ -42,11 +38,9 @@ section {
     font-weight: 500;
 }
 
-.navbar a:hover {
-    color: rgb(140,198,177);
-}
-
-.navbar a:active {
+.navbar a:hover,
+.navbar a:active,
+.color-accent {
     color: rgb(140,198,177);
 }
 
@@ -214,18 +208,21 @@ h2 {
     font-size: 4rem;
     font-weight: 900;
     letter-spacing: 1px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .home-text {
     margin: 0;
     font-size: 1.2rem;
-    font-weight: 300;
+    font-weight: 500;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .home-paragraph {
     margin: 8px 0 12px 0;
     font-size: 1.2rem;
-    font-weight: 300;
+    font-weight: 500;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .screen-graphic {

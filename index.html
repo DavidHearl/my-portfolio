@@ -13,11 +13,13 @@
     <link rel="stylesheet" href="./assets/css/card_slider.css">
     <link rel="stylesheet" href="./assets/css/animation.css">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+
     <title>My Portfolio - David Hearl</title>
 </head>
 
 <body>
-
     <!-- Navigation -->
     <header>
         <nav class="navbar navbar-expand-lg fixed-top">
@@ -59,8 +61,10 @@
         </nav>
     </header>
 
-    <!-- Home Section -->
-    <section id="home" class="background">
+    <!-- ------------------------------------------------------- -->
+    <!-- -------------------- Home Section --------------------- -->
+    <!-- ------------------------------------------------------- -->
+    <section id="home" id="background">
         <div class="container">
             <div class="row home-row">
                 <div class="col-12 home-col">
@@ -79,79 +83,15 @@
                             <i class="fab fa-github"></i>
                         </a>
                     </div>
-
                 </div>
-                <!-- <div class="col-sm-12 col-md-6">
-                    <div class="screen-graphic mx-auto">
-                        <div class="screen-menubar">
-                            <span class="close"></span>
-                            <span class="minimise"></span>
-                            <span class="full-screen"></span>
-                        </div>
-                        <div class="mini-code-block">
-                            <div class="mini-text-block">
-                                <p class="mini-text-gray">1</p>
-                                <p class="mini-text-dark-blue line-1"></p>
-                                <p class="mini-text-light-blue word-spacing line-2"></p>
-                                <p class="mini-text-white word-spacing line-3"></p>
-                                <p class="mini-text-yellow word-spacing line-4"></p>
-                            </div>
-                            <div class="mini-text-block">
-                                <p class="mini-text-gray">2</p>
-                                <p class="mini-text-aqua indent-1 line-5"></p>
-                                <p class="mini-text-orange word-spacing line-6"></p>
-                                <p class="mini-text-white line-7"></p>
-                            </div>
-                            <div class="mini-text-block">
-                                <p class="mini-text-gray">3</p>
-                                <p class="mini-text-aqua indent-1 line-8"></p>
-                                <p class="mini-text-orange word-spacing line-9"></p>
-                                <p class="mini-text-white line-10"></p>
-                            </div>
-                            <div class="mini-text-block">
-                                <p class="mini-text-gray">4</p>
-                                <p class="mini-text-aqua indent-1 line-11"></p>
-                                <p class="mini-text-green word-spacing line-12"></p>
-                                <p class="mini-text-white line-13"></p>
-                            </div>
-                            <div class="mini-text-block">
-                                <p class="mini-text-gray">5</p>
-                                <p class="mini-text-aqua indent-1 line-14"></p>
-                                <p class="mini-text-orange word-spacing line-15"></p>
-                                <p class="mini-text-white line-16"></p>
-                            </div>
-                            <div class="mini-text-block">
-                                <p class="mini-text-gray">6</p>
-                                <p class="mini-text-aqua indent-1 line-17"></p>
-                                <p class="mini-text-orange word-spacing line-18"></p>
-                                <p class="mini-text-white line-19"></p>
-                            </div>
-                            <div class="mini-text-block">
-                                <p class="mini-text-gray">7</p>
-                                <p class="mini-text-aqua indent-1 line-20"></p>
-                                <p class="mini-text-orange word-spacing line-21"></p>
-                                <p class="mini-text-white line-22"></p>
-                            </div>
-                            <div class="mini-text-block">
-                                <p class="mini-text-gray">8</p>
-                                <p class="mini-text-aqua indent-1 line-23"></p>
-                                <p class="mini-text-green word-spacing line-24"></p>
-                                <p class="mini-text-white line-25"></p>
-                            </div>
-                            <div class="mini-text-block">
-                                <p class="mini-text-gray">9</p>
-                                <p class="mini-text-yellow line-26"></p>
-                                <p class="mini-text-white line-27"></p>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="dark-background">
+    <!-- ------------------------------------------------------- -->
+    <!-- -------------------- About Section -------------------- -->
+    <!-- ------------------------------------------------------- -->
+    <section id="about" class="background">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 headshot-container">
@@ -159,8 +99,7 @@
                 </div>
                 <div class="col-md-8">
                     <h2>About</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>My name is David, I have been an engineer for 8 and I am looking to persue my passion in web & software development</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -595,7 +534,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://kit.fontawesome.com/310a0680ee.js" crossorigin="anonymous"></script>
 
-    <script src="./assets/js/snowflakes.js"></script>
+    <script src="./assets/js/vanta-script.js"></script>
     <script src="./assets/js/navigation.js"></script>
     <script src="./assets/js/auto_type.js"></script>
     <script src="./assets/js/card_slider.js"></script>
