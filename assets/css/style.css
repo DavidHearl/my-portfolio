@@ -5,6 +5,8 @@
   --bg: #202020;
   --text: #e6e6e6;
   --primary: #e16e44;
+  --primary-glow: rgba(225, 110, 68, 0.1);
+  --primary-glow-bright: rgba(255, 129, 76, 0.12);
   --accent: #ff814c;
   --highlight: #ff9566;
   --muted: #797979;
@@ -228,6 +230,66 @@ body {
 .job-details li {
   margin-bottom: 0.5rem;
   line-height: 1.6;
+}
+
+.projects-section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.projects-section h2 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.25rem;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 3rem;
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  background: var(--card-bg);
+  color: var(--text);
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border);
+  text-align: left;
+}
+
+.custom-table thead {
+  background: #2e2e2e;
+}
+
+.custom-table tbody tr:nth-child(even) {
+  background-color: #262626;
+}
+
+.custom-table tbody tr.expandable-row:hover {
+  background: linear-gradient(to right, rgba(225, 110, 68, 0.08), rgba(255, 129, 76, 0.10));
+  cursor: pointer;
+}
+
+.hidden-row {
+  display: none;
+  background-color: #1d1d1d;
+  font-style: italic;
+}
+
+.hidden-row td {
+  border-top: none;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: var(--secondary);
 }
 
 

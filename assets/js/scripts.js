@@ -9,3 +9,13 @@ toggles.forEach(toggle => {
     toggle.setAttribute('aria-expanded', !expanded);
   });
 });
+
+
+document.querySelectorAll('.expandable-row').forEach(row => {
+row.addEventListener('click', () => {
+    const next = row.nextElementSibling;
+    if (next && next.classList.contains('hidden-row')) {
+    next.style.display = next.style.display === 'table-row' ? 'none' : 'table-row';
+    }
+});
+});
