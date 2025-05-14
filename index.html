@@ -14,89 +14,136 @@
     <link rel="stylesheet" href="./assets/css/animation.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
 
     <title>My Portfolio - David Hearl</title>
 </head>
 
 <body>
-    <!-- Navigation -->
-    <header>
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <div id="nav-icon">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <!-- Navigation links -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#work">Work</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#education">Education</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <section id="landing">
+    <div class="landing-wrapper">
+        <div class="intro">
+        <p class="intro-label">Hi, my name is</p>
+        <h1 class="intro-name">David Hearl</h1>
+        <p class="intro-role">Web Developer & Engineer</p>
+        <p class="intro-text">
+            I enjoy building web platforms, tools, and visual interfaces that solve real problems with thoughtful design.
+        </p>
+        <div class="social-links">
+            <a href="https://github.com/DavidHearl" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/david-hearl-7932b618a" target="_blank">LinkedIn</a>
+            <a href="#">Resume</a>
+        </div>
+        </div>
 
-    <!-- ------------------------------------------------------- -->
-    <!-- -------------------- Home Section --------------------- -->
-    <!-- ------------------------------------------------------- -->
-    <section id="home" id="background">
-        <div class="container">
-            <div class="row home-row">
-                <div class="col-12 home-col">
-                    <p class="home-text">Hello, I'm</p>
-                    <h2>DAVID HEARL</h2>
-                    <p class="home-text">I am a <span class="color-accent">Web Developer</span></p>
-                    <p class="home-paragraph">I enjoy building things and turning ideas into reality within the virtual
-                        environment.</p>
-                    <div>
-                        <button class="cv-download">Download Resume</button>
-                        <a href="https://www.linkedin.com/in/david-hearl-7932b618a" target="_blank"
-                            rel="noopener noreferrer">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/DavidHearl" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
+        <div class="about">
+        <h2>About</h2>
+        <p>
+            I’m a former engineer turned web developer, currently focused on building efficient and scalable software
+            systems. I love working on full-stack Django projects and running a tight homelab for self-hosted tools.
+        </p>
+        <p>
+            When I’m not coding, I’m probably tweaking server racks or planning infrastructure like I’m building my own ISP.
+        </p>
+        </div>
+    </div>
+    </section>
+
+    <section id="work" class="work-section">
+    <h2 class="section-heading">Where I've Worked</h2>
+
+    <div class="job-list">
+        <!-- Job Entry -->
+        <div class="job-entry">
+            <button class="job-toggle" aria-expanded="false">
+                <div class="job-meta">
+                    <p class="job-date">Nov 2021 – Present</p>
+                    <p class="job-title">Designer</p>
+                    <p class="job-company">MJM & Mivan</p>
                 </div>
+            </button>
+            <div class="job-details">
+                <ul>
+                    <li>Worked on detailed interior ship fit-out packages using AutoCAD and Revit.</li>
+                    <li>Collaborated with architects and contractors across global projects.</li>
+                    <li>Delivered 3D visuals and layout drawings to production teams.</li>
+                </ul>
             </div>
         </div>
-    </section>
+
+        <div class="job-entry">
+            <button class="job-toggle" aria-expanded="false">
+                <div class="job-meta">
+                    <p class="job-date">Sep 2019 – Nov 2021</p>
+                    <p class="job-title">CAD Engineer</p>
+                    <p class="job-company">Freudenberg</p>
+                </div>
+            </button>
+            <div class="job-details">
+                <ul>
+                    <li>Designed sealing systems and assemblies for automotive applications.</li>
+                    <li>Created 3D CAD models and 2D production drawings using Inventor and AutoCAD.</li>
+                    <li>Supported production engineering with fixture development.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="job-entry">
+            <button class="job-toggle" aria-expanded="false">
+                <div class="job-meta">
+                    <p class="job-date">Jan 2017 – Sep 2019</p>
+                    <p class="job-title">CAD Apprentice</p>
+                    <p class="job-company">Freudenberg</p>
+                </div>
+            </button>
+            <div class="job-details">
+                <ul>
+                    <li>Completed HNC in Mechanical Engineering alongside apprenticeship.</li>
+                    <li>Generated part models, assemblies, and technical drawings.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="job-entry">
+            <button class="job-toggle" aria-expanded="false">
+                <div class="job-meta">
+                    <p class="job-date">Sep 2015 – Jan 2017</p>
+                    <p class="job-title">Engineering Apprentice</p>
+                    <p class="job-company">Freudenberg</p>
+                </div>
+            </button>
+            <div class="job-details">
+                <ul>
+                    <li>Rotated through toolroom, maintenance, and product development teams.</li>
+                    <li>Hands-on manufacturing and inspection experience.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="job-entry">
+            <button class="job-toggle" aria-expanded="false">
+                <div class="job-meta">
+                    <p class="job-date">Jul 2017 – May 2018</p>
+                    <p class="job-title">Delivery Driver</p>
+                    <p class="job-company">Domino’s Pizza</p>
+                </div>
+            </button>
+            <div class="job-details">
+                <ul>
+                    <li>Managed timed deliveries across local areas during peak hours.</li>
+                    <li>Provided customer service under pressure.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
 
     <!-- ------------------------------------------------------- -->
     <!-- -------------------- About Section -------------------- -->
     <!-- ------------------------------------------------------- -->
-    <section id="about" class="background">
+    <!-- <section id="about" class="background">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 headshot-container">
-                    <img id="headshot" src="./assets/images/headshot.jpg" alt="">
-                </div>
                 <div class="col-md-8">
                     <h2>About</h2>
                     <p>My name is David, I have been an engineer for 8 and I am looking to persue my passion in web & software development</p>
@@ -141,10 +188,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Projects -->
-    <section id="projects" class="dark-background">
+    <!-- <section id="projects" class="dark-background">
         <div class="container">
             <h2>Projects</h2>
             <div class="card">
@@ -229,10 +276,60 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+
+
+    <!-- Add after the Fun Projects section or wherever appropriate -->
+    <!-- <section id="project-status" class="dark-background">
+        <div class="container">
+            <h2>Project Status Table</h2>
+            <div class="table-responsive">
+                <table class="table table-dark table-striped table-bordered align-middle">
+                    <thead>
+                        <tr>
+                            <th>Project</th>
+                            <th>Active</th>
+                            <th>Notes</th>
+                            <th>Actions</th>
+                            <th>Ready to</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>say-it-again</td><td>FALSE</td><td>Add Polish</td><td></td><td>TRUE</td></tr>
+                        <tr><td>scene-automation</td><td>TRUE</td><td></td><td></td><td>FALSE</td></tr>
+                        <tr><td>investments</td><td>FALSE</td><td>Reports on the status of Trading 212 Investments</td><td></td><td>FALSE</td></tr>
+                        <tr><td>finances</td><td>TRUE</td><td>Mortgage Calculator</td><td>Rename</td><td>FALSE</td></tr>
+                        <tr><td>quiz-site</td><td>FALSE</td><td></td><td>Convert to code based groups</td><td>FALSE</td></tr>
+                        <tr><td>drive-locations</td><td>FALSE</td><td>Locations of all the drives in the systems</td><td></td><td>FALSE</td></tr>
+                        <tr><td>golf_statistics</td><td>FALSE</td><td>Tracks all the drives across each server (diagram at the bottom)</td><td></td><td>TRUE</td></tr>
+                        <tr><td>predictions</td><td>FALSE</td><td></td><td></td><td>FALSE</td></tr>
+                        <tr><td>canasta</td><td>FALSE</td><td></td><td>Upgrade to Django</td><td>FALSE</td></tr>
+                        <tr><td>my-portfolio</td><td>FALSE</td><td></td><td></td><td>FALSE</td></tr>
+                        <tr><td>football-predictions</td><td>FALSE</td><td>Depreciated: Move to predictions</td><td></td><td>FALSE</td></tr>
+                        <tr><td>scene-control</td><td>FALSE</td><td>Depreciated: Move to scene-automation</td><td></td><td>FALSE</td></tr>
+                        <tr><td>chiropractic-website-2</td><td>FALSE</td><td>Upgrade from chiropratic-website</td><td>Finish & Delploy</td><td>FALSE</td></tr>
+                        <tr><td>Sweet-Shop</td><td>TRUE</td><td>Portfolio Project 5</td><td>Move to VM Deployment</td><td>FALSE</td></tr>
+                        <tr><td>Inventor_Add_In</td><td>FALSE</td><td>There for nostalgia at this point</td><td></td><td>FALSE</td></tr>
+                        <tr><td>polynomial_calculator</td><td>FALSE</td><td>Old project, terminal based</td><td></td><td>FALSE</td></tr>
+                        <tr><td>cad-tips</td><td>FALSE</td><td>Failed Portfolio Project 4</td><td></td><td>FALSE</td></tr>
+                        <tr><td>enimga-machine</td><td>FALSE</td><td>Working Enigma, cba to finish</td><td></td><td>FALSE</td></tr>
+                        <tr><td>inventor-blog</td><td>FALSE</td><td>Failed Portfolio Project 4</td><td></td><td>FALSE</td></tr>
+                        <tr><td>connect-four</td><td>FALSE</td><td>Portfolio Project 3, terminal based</td><td>Deploy</td><td>TRUE</td></tr>
+                        <tr><td>flag-game</td><td>TRUE</td><td>Portfolio Project 2</td><td></td><td>FALSE</td></tr>
+                        <tr><td>plex-media</td><td>FALSE</td><td>A website to show all the folders in media</td><td>Start it</td><td>FALSE</td></tr>
+                        <tr><td>workout-guru</td><td>FALSE</td><td>A website to track lifts and give exercise suggestions</td><td>Start it</td><td>FALSE</td></tr>
+                        <tr><td>property-finances</td><td>FALSE</td><td>A website to track finances on the properties</td><td>Start it</td><td>FALSE</td></tr>
+                        <tr><td>server-configurations</td><td>FALSE</td><td>A map of the server rack</td><td></td><td>FALSE</td></tr>
+                        <tr><td>chiropractic-website</td><td>TRUE</td><td>Portfolio Project 1</td><td></td><td>FALSE</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section> -->
+
 
     <!-- Fun Projects -->
-    <section id="fun-projects" class="dark-background">
+    <!-- <section id="fun-projects" class="dark-background">
         <div class="container slider">
             <h2>Fun Projects</h2>
             <p>Below are a few projects I have been working on. Some projects are fun little </p>
@@ -305,10 +402,10 @@
             </ul>
             <i id="right" class="fa-solid fa-angle-right"></i>
         </div>
-    </section>
+    </section> -->
 
     <!-- Work -->
-    <section id="work" class="dark-background">
+    <!-- <section id="work" class="dark-background">
         <div class="container">
             <h2></h2>
             <div class="wrapper">
@@ -398,10 +495,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Education -->
-    <section id="education" class="dark-background d-flex align-items-center">
+    <!-- <section id="education" class="dark-background d-flex align-items-center">
         <div class="container">
             <h3 class="section-heading text-center">
                 <span class="color-accent">{</span>
@@ -448,11 +545,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
     <!-- Contact -->
-    <section id="contact" class="light-background d-flex align-items-center">
+    <!-- <section id="contact" class="light-background d-flex align-items-center">
         <div class="container">
             <h3 class="section-heading text-center">
                 <span class="color-accent">{</span>
@@ -497,10 +594,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Footer -->
-    <footer class="text-center py-3">
+    <!-- <footer class="text-center py-3">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -527,17 +624,14 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://kit.fontawesome.com/310a0680ee.js" crossorigin="anonymous"></script>
 
-    <script src="./assets/js/vanta-script.js"></script>
-    <script src="./assets/js/navigation.js"></script>
-    <script src="./assets/js/auto_type.js"></script>
-    <script src="./assets/js/card_slider.js"></script>
+    <script src="./assets/js/scripts.js"></script>
 </body>
 
 </html>
