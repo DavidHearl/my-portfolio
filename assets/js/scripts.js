@@ -1,20 +1,21 @@
 const toggles = document.querySelectorAll('.job-toggle');
 
-document.querySelectorAll('.job-toggle').forEach(button => {
-    button.addEventListener('click', () => {
-        const entry = button.closest('.job-entry');
+document.querySelectorAll('.job-entry').forEach(entry => {
+    entry.addEventListener('click', function (e) {
+        // Prevent toggle if clicking a link or selecting text
+        const isInteractive = e.target.tagName === 'A' || e.target.closest('a');
+        const isSelectable = window.getSelection().toString().length > 0;
+
+        if (isInteractive || isSelectable) return;
+
+        // Toggle the open state
+        this.classList.toggle('open');
+
+        // Update aria-expanded if you’re using it
+        const button = this.querySelector('.job-toggle');
+        if (button) {
         const expanded = button.getAttribute('aria-expanded') === 'true';
-
-        // Collapse all other entries
-        document.querySelectorAll('.job-entry').forEach(el => {
-        el.classList.remove('open');
-        el.querySelector('.job-toggle').setAttribute('aria-expanded', 'false');
-        });
-
-        // Toggle the clicked one
-        if (!expanded) {
-        entry.classList.add('open');
-        button.setAttribute('aria-expanded', 'true');
+        button.setAttribute('aria-expanded', (!expanded).toString());
         }
     });
 });

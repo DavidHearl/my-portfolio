@@ -8,8 +8,6 @@
     --bg: #202020;
     --text: #e6e6e6;
     --primary: #e16e44;
-    --primary-glow: rgba(225, 110, 68, 0.1);
-    --primary-glow-bright: rgba(255, 129, 76, 0.12);
     --accent: #ff814c;
     --highlight: #ff9566;
     --muted: #797979;
@@ -165,12 +163,63 @@ body {
 .job-entry {
     display: flex;
     flex-direction: column;
+    position: relative;
     border-radius: 12px;
     background: var(--card-bg);
     border: 1px solid var(--border);
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
     overflow: hidden;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.job-entry:hover {
+    background: linear-gradient(
+        135deg,
+        rgba(225, 110, 68, 0.45),
+        rgba(255, 129, 76, 0.85)
+    );
+    box-shadow: 0 4px 16px rgba(225, 110, 68, 0.12);
+}
+
+.job-entry:hover .job-title {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.job-entry:hover .job-date,
+.job-entry:hover .job-company {
+    color: #d6d6d6; /* Or var(--text) if you prefer full contrast */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.job-entry::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.015),
+    rgba(255, 255, 255, 0.05)
+  );
+  transform: skewX(-25deg);
+  pointer-events: none;
+}
+
+.job-entry:hover::before {
+  animation: swipe-glow 1s ease forwards;
+}
+
+@keyframes swipe-glow {
+  from {
+    left: -75%;
+  }
+  to {
+    left: 125%;
+  }
 }
 
 .job-entry.open {
@@ -187,7 +236,6 @@ body {
 }
 
 .job-toggle:hover {
-    background: linear-gradient(to right, rgba(225, 110, 68, 0.08), rgba(255, 129, 76, 0.04));
     color: var(--accent);
 }
 
@@ -211,11 +259,12 @@ body {
     overflow: hidden;
     padding: 0 1.5rem;
     transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
+    cursor: pointer;
 }
 
 .job-title {
-    font-weight: 600;
-    font-size: 1.1rem;
+    font-weight: 500;
+    font-size: 1.15rem;
     color: var(--text);
     margin-bottom: 0;
 }
@@ -223,7 +272,7 @@ body {
 .job-entry.open .job-details {
     max-height: 500px;
     opacity: 1;
-    padding: 1rem 1.5rem 1.5rem;
+    padding: 0 1.5rem 1rem 1.5rem;
 }
 
 .job-details ul {
@@ -232,12 +281,7 @@ body {
 }
 
 .job-details li {
-    margin-bottom: 0.5rem;
-    line-height: 1.6;
-}
-
-.job-entry:hover {
-    background: var(--primary);
+    line-height: 2.25;
 }
 
 /* =========================
