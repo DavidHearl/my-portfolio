@@ -30,43 +30,71 @@ body {
    Navigation Styles
    ========================= */
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
 .navbar {
-  background: linear-gradient(to bottom, #cc5836, #b24b2f);
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
-  padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: linear-gradient(to bottom, #cc5836, #b24b2f);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+    padding: 1rem 0;
 }
 
 .navbar nav ul {
-  display: flex;
-  gap: 2rem;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .navbar nav a {
-  text-decoration: none;
-  color: white;
-  font-weight: 600;
-  transition: color 0.3s ease;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
 
 .navbar nav a:hover {
-  color: var(--accent);
+    color: var(--accent);
 }
 
 /* =========================
    Landing Section
    ========================= */
 #landing {
-  padding: 6rem 2rem 4rem;
-  max-width: 800px;
+    padding: 4rem 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.landing-container {
+  max-width: 960px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.card {
+  width: 100%;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: inherit;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(225, 110, 68, 0.2);
 }
 
 .landing-wrapper {
