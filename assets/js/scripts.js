@@ -21,10 +21,19 @@ document.querySelectorAll('.job-entry').forEach(entry => {
 });
 
 document.querySelectorAll('.expandable-row').forEach(row => {
-row.addEventListener('click', () => {
-    const next = row.nextElementSibling;
-    if (next && next.classList.contains('hidden-row')) {
-    next.style.display = next.style.display === 'table-row' ? 'none' : 'table-row';
-    }
+    row.addEventListener('click', () => {
+        const next = row.nextElementSibling;
+        if (next && next.classList.contains('hidden-row')) {
+        next.style.display = next.style.display === 'table-row' ? 'none' : 'table-row';
+        }
+    });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    toggle.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+    });
 });

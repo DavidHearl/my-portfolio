@@ -19,242 +19,249 @@
 </head>
 
 <body>
-    <header class="navbar">
-    <div class="container">
-        <nav>
-        <ul>
-            <li><a href="#landing">Home</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
+    <header class="site-header">
+    <nav class="nav">
+        <div class="nav-logo">DH</div>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+        </button>
+        <ul class="nav-links">
+        <li><a href="#landing">Home</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
         </ul>
-        </nav>
-    </div>
+    </nav>
     </header>
 
     <section id="landing">
-    <div class="landing-wrapper">
-        <div class="intro card intro-card">
-        <p class="intro-label">Hi, my name is</p>
-        <h1 class="intro-name">David Hearl</h1>
-        <p class="intro-role">Web Developer & Engineer</p>
-        <p class="intro-text">
-            I enjoy building web platforms, tools, and visual interfaces that solve real problems with thoughtful design.
-        </p>
-        <div class="social-links">
-            <a href="https://github.com/DavidHearl" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/david-hearl-7932b618a" target="_blank">LinkedIn</a>
-            <a href="#">Resume</a>
-        </div>
-        </div>
+        <div class="landing-wrapper">
+            <div class="intro card intro-card">
+            <p class="intro-label">Hi, my name is</p>
+            <h1 class="intro-name">David Hearl</h1>
+            <p class="intro-role">Web Developer & Engineer</p>
+            <p class="intro-text">
+                I enjoy building web platforms, tools, and visual interfaces that solve real problems with thoughtful design.
+            </p>
+            <div class="social-links">
+                <a href="https://github.com/DavidHearl" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/david-hearl-7932b618a" target="_blank">LinkedIn</a>
+                <a href="#">Resume</a>
+            </div>
+            </div>
 
-        <div class="about card about-card">
-        <h2>About</h2>
-        <p>
-            I’m a former engineer turned web developer, currently focused on building efficient and scalable software
-            systems. I love working on full-stack Django projects and running a tight homelab for self-hosted tools.
-        </p>
-        <p>
-            When I’m not coding, I’m probably tweaking server racks or planning infrastructure like I’m building my own ISP.
-        </p>
+            <div class="about card about-card">
+            <h2>About</h2>
+            <p>
+                I’m a former engineer turned web developer, currently focused on building efficient and scalable software
+                systems. I love working on full-stack Django projects and running a tight homelab for self-hosted tools.
+            </p>
+            <p>
+                When I’m not coding, I’m probably tweaking server racks or planning infrastructure like I’m building my own ISP.
+            </p>
+            </div>
         </div>
-    </div>
     </section>
 
     <section id="work" class="work-section">
-    <h2 class="section-heading">Where I've Worked</h2>
+        <h2 class="section-heading">Where I've Worked</h2>
+        <p class="hint">Click to See More</p>
 
-    <div class="job-list">
-        <!-- Job Entry -->
-        <div class="job-entry">
-            <button class="job-toggle" aria-expanded="false">
-                <div class="job-meta">
-                    <p class="job-title">Designer</p>
-                    <p class="job-date">Nov 2021 – Present</p>
-                    <p class="job-company">MJM & Mivan</p>
+        <div class="job-list">
+            <!-- Job Entry -->
+            <div class="job-entry">
+                <button class="job-toggle" aria-expanded="false">
+                    <div class="job-meta">
+                        <p class="job-title">Designer</p>
+                        <p class="job-date">Nov 2021 – Present</p>
+                        <p class="job-company">MJM & Mivan</p>
+                    </div>
+                </button>
+                <div class="job-details">
+                    <ul>
+                        <li>Worked on detailed interior ship fit-out packages using AutoCAD and Revit.</li>
+                        <li>Collaborated with architects and contractors across global projects.</li>
+                        <li>Delivered 3D visuals and layout drawings to production teams.</li>
+                    </ul>
                 </div>
-            </button>
-            <div class="job-details">
-                <ul>
-                    <li>Worked on detailed interior ship fit-out packages using AutoCAD and Revit.</li>
-                    <li>Collaborated with architects and contractors across global projects.</li>
-                    <li>Delivered 3D visuals and layout drawings to production teams.</li>
-                </ul>
+            </div>
+
+            <div class="job-entry">
+                <button class="job-toggle" aria-expanded="false">
+                    <div class="job-meta">
+                        <p class="job-title">CAD Engineer</p>
+                        <p class="job-date">Sep 2019 – Nov 2021</p>
+                        <p class="job-company">Freudenberg</p>
+                    </div>
+                </button>
+                <div class="job-details">
+                    <ul>
+                        <li>Designed sealing systems and assemblies for automotive applications.</li>
+                        <li>Created 3D CAD models and 2D production drawings using Inventor and AutoCAD.</li>
+                        <li>Supported production engineering with fixture development.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="job-entry">
+                <button class="job-toggle" aria-expanded="false">
+                    <div class="job-meta">
+                        <p class="job-title">CAD Apprentice</p>
+                        <p class="job-date">Jan 2017 – Sep 2019</p>
+                        <p class="job-company">Freudenberg</p>
+                    </div>
+                </button>
+                <div class="job-details">
+                    <ul>
+                        <li>Completed HNC in Mechanical Engineering alongside apprenticeship.</li>
+                        <li>Generated part models, assemblies, and technical drawings.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="job-entry">
+                <button class="job-toggle" aria-expanded="false">
+                    <div class="job-meta">
+                        <p class="job-title">Engineering Apprentice</p>
+                        <p class="job-date">Sep 2015 – Jan 2017</p>
+                        <p class="job-company">Freudenberg</p>
+                    </div>
+                </button>
+                <div class="job-details">
+                    <ul>
+                        <li>Rotated through toolroom, maintenance, and product development teams.</li>
+                        <li>Hands-on manufacturing and inspection experience.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="job-entry">
+                <button class="job-toggle" aria-expanded="false">
+                    <div class="job-meta">
+                        <p class="job-title">Delivery Driver</p>
+                        <p class="job-date">Jul 2017 – May 2018</p>
+                        <p class="job-company">Domino’s Pizza</p>
+                    </div>
+                </button>
+                <div class="job-details">
+                    <ul>
+                        <li>Managed timed deliveries across local areas during peak hours.</li>
+                        <li>Provided customer service under pressure.</li>
+                    </ul>
+                </div>
             </div>
         </div>
-
-        <div class="job-entry">
-            <button class="job-toggle" aria-expanded="false">
-                <div class="job-meta">
-                    <p class="job-title">CAD Engineer</p>
-                    <p class="job-date">Sep 2019 – Nov 2021</p>
-                    <p class="job-company">Freudenberg</p>
-                </div>
-            </button>
-            <div class="job-details">
-                <ul>
-                    <li>Designed sealing systems and assemblies for automotive applications.</li>
-                    <li>Created 3D CAD models and 2D production drawings using Inventor and AutoCAD.</li>
-                    <li>Supported production engineering with fixture development.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="job-entry">
-            <button class="job-toggle" aria-expanded="false">
-                <div class="job-meta">
-                    <p class="job-title">CAD Apprentice</p>
-                    <p class="job-date">Jan 2017 – Sep 2019</p>
-                    <p class="job-company">Freudenberg</p>
-                </div>
-            </button>
-            <div class="job-details">
-                <ul>
-                    <li>Completed HNC in Mechanical Engineering alongside apprenticeship.</li>
-                    <li>Generated part models, assemblies, and technical drawings.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="job-entry">
-            <button class="job-toggle" aria-expanded="false">
-                <div class="job-meta">
-                    <p class="job-title">Engineering Apprentice</p>
-                    <p class="job-date">Sep 2015 – Jan 2017</p>
-                    <p class="job-company">Freudenberg</p>
-                </div>
-            </button>
-            <div class="job-details">
-                <ul>
-                    <li>Rotated through toolroom, maintenance, and product development teams.</li>
-                    <li>Hands-on manufacturing and inspection experience.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="job-entry">
-            <button class="job-toggle" aria-expanded="false">
-                <div class="job-meta">
-                    <p class="job-title">Delivery Driver</p>
-                    <p class="job-date">Jul 2017 – May 2018</p>
-                    <p class="job-company">Domino’s Pizza</p>
-                </div>
-            </button>
-            <div class="job-details">
-                <ul>
-                    <li>Managed timed deliveries across local areas during peak hours.</li>
-                    <li>Provided customer service under pressure.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    </section>
 
     <section id="projects">
     <div class="projects-section">
-        <h2>In Progress Projects</h2>
-        <p class="project-hint"></p>
+        <h2 class="section-heading">Deployed Projects</h2>
+        <p class="hint">Click a row to see more details</p>
+
         <div class="table-wrapper">
-        <table class="custom-table">
-            <thead>
-            <tr>
-                <th>Project</th>
-                <th>Next Job</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr class="expandable-row"><td>scene-automation</td><td></td></tr>
-            <tr class="hidden-row"><td colspan="2">No description provided.</td></tr>
+            <table class="custom-table">
+                <thead>
+                    <tr>
+                        <th>Project</th>
+                        <th>Next Job</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="expandable-row"><td>scene-automation</td><td></td></tr>
+                    <tr class="hidden-row"><td colspan="2">No description provided.</td></tr>
 
-            <tr class="expandable-row"><td>finances</td><td>Rename</td></tr>
-            <tr class="hidden-row"><td colspan="2">Mortgage Calculator</td></tr>
+                    <tr class="expandable-row"><td>finances</td><td>Rename</td></tr>
+                    <tr class="hidden-row"><td colspan="2">Mortgage Calculator</td></tr>
 
-            <tr class="expandable-row"><td>Sweet-Shop</td><td>Move to VM Deployment</td></tr>
-            <tr class="hidden-row"><td colspan="2">Portfolio Project 5</td></tr>
+                    <tr class="expandable-row"><td>Sweet-Shop</td><td>Move to VM Deployment</td></tr>
+                    <tr class="hidden-row"><td colspan="2">Portfolio Project 5</td></tr>
 
-            <tr class="expandable-row"><td>flag-game</td><td></td></tr>
-            <tr class="hidden-row"><td colspan="2">Portfolio Project 2</td></tr>
+                    <tr class="expandable-row"><td>flag-game</td><td></td></tr>
+                    <tr class="hidden-row"><td colspan="2">Portfolio Project 2</td></tr>
 
-            <tr class="expandable-row"><td>chiropractic-website</td><td></td></tr>
-            <tr class="hidden-row"><td colspan="2">Portfolio Project 1</td></tr>
+                    <tr class="expandable-row"><td>chiropractic-website</td><td></td></tr>
+                    <tr class="hidden-row"><td colspan="2">Portfolio Project 1</td></tr>
 
-            <tr class="expandable-row"><td>investments</td><td></td></tr>
-            <tr class="hidden-row"><td colspan="2">Reports on the status of Trading 212 Investments</td></tr>
-
-            <tr class="expandable-row"><td>quiz-site</td><td>Convert to code based groups</td></tr>
-            <tr class="hidden-row"><td colspan="2"></td></tr>
-
-            <tr class="expandable-row"><td>drive-locations</td><td></td></tr>
-            <tr class="hidden-row"><td colspan="2">Locations of all the drives in the systems</td></tr>
-
-            <tr class="expandable-row"><td>predictions</td><td></td></tr>
-            <tr class="hidden-row"><td colspan="2"></td></tr>
-
-            <tr class="expandable-row"><td>canasta</td><td>Upgrade to Django</td></tr>
-            <tr class="hidden-row"><td colspan="2"></td></tr>
-
-            <tr class="expandable-row"><td>my-portfolio</td><td></td></tr>
-            <tr class="hidden-row"><td colspan="2"></td></tr>
-
-            <tr class="expandable-row"><td>football-predictions</td><td></td></tr>
-            <tr class="hidden-row"><td colspan="2">Depreciated: Move to predictions</td></tr>
-
-            <tr class="expandable-row"><td>scene-control</td><td></td></tr>
-            <tr class="hidden-row"><td colspan="2">Depreciated: Move to scene-automation</td></tr>
-
-            <tr class="expandable-row"><td>chiropractic-website-2</td><td>Finish & Delploy</td></tr>
-            <tr class="hidden-row"><td colspan="2">Upgrade from chiropratic-website</td></tr>
-
-            <tr class="expandable-row"><td>Inventor_Add_In</td><td></td></tr>
-            <tr class="hidden-row"><td colspan="2">There for nostalgia at this point</td></tr>
-
-            <tr class="expandable-row"><td>polynomial_calculator</td><td></td></tr>
-            <tr class="hidden-row"><td colspan="2">Old project, terminal based</td></tr>
-
-            <tr class="expandable-row"><td>cad-tips</td><td></td></tr>
-            <tr class="hidden-row"><td colspan="2">Failed Portfolio Project 4</td></tr>
-
-            <tr class="expandable-row"><td>enimga-machine</td><td></td></tr>
-            <tr class="hidden-row"><td colspan="2">Working Enigma, cba to finish</td></tr>
-
-            <tr class="expandable-row"><td>inventor-blog</td><td></td></tr>
-            <tr class="hidden-row"><td colspan="2">Failed Portfolio Project 4</td></tr>
-
-            <tr class="expandable-row"><td>plex-media</td><td>Start it</td></tr>
-            <tr class="hidden-row"><td colspan="2">A website to show all the folders in media</td></tr>
-
-            <tr class="expandable-row"><td>workout-guru</td><td>Start it</td></tr>
-            <tr class="hidden-row"><td colspan="2">A website to track lifts and give exercise suggestions</td></tr>
-
-            <tr class="expandable-row"><td>property-finances</td><td>Start it</td></tr>
-            <tr class="hidden-row"><td colspan="2">A website to track finances on the properties</td></tr>
-
-            <tr class="expandable-row"><td>server-configurations</td><td></td></tr>
-            <tr class="hidden-row"><td colspan="2">A map of the server rack</td></tr>
-            </tbody>
-        </table>
+                    <tr class="expandable-row"><td>my-portfolio</td><td></td></tr>
+                    <tr class="hidden-row"><td colspan="2"></td></tr>
+                </tbody>
+            </table>
         </div>
 
-        <h2 class="mt-4">Completed Projects Ready to Deploy</h2>
+        <h2 class="section-heading">Ready to Deploy</h2>
+        <p class="hint">Click a row to see more details</p>
+
         <div class="table-wrapper">
-        <table class="custom-table">
-            <thead>
-            <tr>
-                <th>Project</th>
-                <th>Next Job</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr class="expandable-row"><td>say-it-again</td><td>Add Polish</td></tr>
-            <tr class="hidden-row"><td colspan="2">No description provided.</td></tr>
+            <table class="custom-table">
+                <thead>
+                <tr>
+                    <th>Project</th>
+                    <th>Next Job</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="expandable-row"><td>investments</td><td></td></tr>
+                <tr class="hidden-row"><td colspan="2">Reports on the status of Trading 212 Investments</td></tr>
 
-            <tr class="expandable-row"><td>golf_statistics</td><td></td></tr>
-            <tr class="hidden-row"><td colspan="2">Tracks all the drives across each server (diagram at the bottom)</td></tr>
+                <tr class="expandable-row"><td>quiz-site</td><td>Convert to code based groups</td></tr>
+                <tr class="hidden-row"><td colspan="2"></td></tr>
 
-            <tr class="expandable-row"><td>connect-four</td><td>Deploy</td></tr>
-            <tr class="hidden-row"><td colspan="2">Portfolio Project 3, terminal based</td></tr>
-            </tbody>
-        </table>
+                <tr class="expandable-row"><td>say-it-again</td><td>Add Polish</td></tr>
+                <tr class="hidden-row"><td colspan="2">No description provided.</td></tr>
+
+                <tr class="expandable-row"><td>golf_statistics</td><td></td></tr>
+                <tr class="hidden-row"><td colspan="2">Tracks all the drives across each server (diagram at the bottom)</td></tr>
+
+                <tr class="expandable-row"><td>connect-four</td><td>Deploy</td></tr>
+                <tr class="hidden-row"><td colspan="2">Portfolio Project 3, terminal based</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="table-wrapper">
+            <h2 class="section-heading">On the Back Burner</h2>
+            <p class="hint">Click a row to see more details</p>
+
+            <table class="custom-table">
+                <thead>
+                <tr>
+                    <th>Project</th>
+                    <th>Next Job</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr class="expandable-row"><td>server-configurations</td><td></td></tr>
+                    <tr class="hidden-row"><td colspan="2">A map of the server rack and a map of all the drives. Also shows the contents of each folder</td></tr>
+
+                    <tr class="expandable-row"><td>predictions</td><td></td></tr>
+                    <tr class="hidden-row"><td colspan="2"></td></tr>
+
+                    <tr class="expandable-row"><td>football-predictions</td><td></td></tr>
+                    <tr class="hidden-row"><td colspan="2">Depreciated: Move to predictions</td></tr>
+
+                    <tr class="expandable-row"><td>chiropractic-website-2</td><td>Finish & Delploy</td></tr>
+                    <tr class="hidden-row"><td colspan="2">Upgrade from chiropratic-website</td></tr>
+
+                    <tr class="expandable-row"><td>canasta</td><td>Upgrade to Django</td></tr>
+                    <tr class="hidden-row"><td colspan="2"></td></tr>
+
+                    <tr class="expandable-row"><td>Inventor_Add_In</td><td></td></tr>
+                    <tr class="hidden-row"><td colspan="2">There for nostalgia at this point</td></tr>
+
+                    <tr class="expandable-row"><td>enimga-machine</td><td></td></tr>
+                    <tr class="hidden-row"><td colspan="2">Working Enigma, cba to finish</td></tr>
+
+                    <tr class="expandable-row"><td>polynomial_calculator</td><td></td></tr>
+                    <tr class="hidden-row"><td colspan="2">Old project, terminal based</td></tr>
+
+                    <tr class="expandable-row"><td>workout-guru</td><td>Start it</td></tr>
+                    <tr class="hidden-row"><td colspan="2">A website to track lifts and give exercise suggestions</td></tr>
+
+                    <tr class="expandable-row"><td>property-finances</td><td>Start it</td></tr>
+                    <tr class="hidden-row"><td colspan="2">A website to track finances on the properties</td></tr>
+                </tbody>
+            </table>
         </div>
     </div>
     </section>
@@ -338,7 +345,7 @@
     </section>
 
     <section id="contact" class="contact-section">
-    <div class="container">
+    <div class="contact-container">
         <h2 class="section-heading">Get in Touch</h2>
         <form action="https://formspree.io/f/mldbalkg" method="POST" class="contact-form">
         <input type="text" name="name" placeholder="Your Name" required>
@@ -348,6 +355,17 @@
         </form>
     </div>
     </section>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p class="footer-name">© 2025 David Hearl</p>
+            <div class="footer-links">
+            <a href="mailto:your@email.com" aria-label="Email">Email</a>
+            <a href="https://github.com/DavidHearl" target="_blank" aria-label="GitHub">GitHub</a>
+            <a href="https://www.linkedin.com/in/david-hearl-7932b618a" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
