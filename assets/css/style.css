@@ -124,8 +124,6 @@ body {
   }
 }
 
-
-
 /* =========================
    Navigation Styles
    ========================= */
@@ -248,6 +246,11 @@ body {
 .about p,
 .intro-text {
     max-width: 600px;
+}
+
+.social-links {
+    display: flex;
+    gap: 36px;
 }
 
 .social-links a {
@@ -452,55 +455,98 @@ body {
    Projects Section
    ========================= */
 .projects-section {
-    padding: 4rem 0 0 0;
-    max-width: 1000px;
-    margin: 0 auto;
+  padding: 4rem 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .table-wrapper {
-    overflow-x: auto;
-    margin-bottom: 3rem;
+  overflow-x: auto;
+  margin-bottom: 3rem;
+  background: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease;
 }
 
 .custom-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 0.95rem;
-    background: var(--card-bg);
-    color: var(--text);
-}
-
-.custom-table th,
-.custom-table td {
-    padding: 0.75rem 1rem;
-    border: 1px solid var(--border);
-    text-align: left;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 0.95rem;
+  color: var(--text);
 }
 
 .custom-table thead {
-    background: #2e2e2e;
+  background: linear-gradient(to right, rgba(255, 129, 76, 0.08), rgba(255, 129, 76, 0.03));
 }
 
-.custom-table tbody tr:nth-child(even) {
-    background-color: #262626;
+.custom-table th {
+  padding: 1rem;
+  font-weight: 600;
+  color: var(--highlight);
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  width: 100%;
 }
 
-.custom-table tbody tr.expandable-row:hover {
-    background: linear-gradient(to right, rgba(225, 110, 68, 0.08), rgba(255, 129, 76, 0.10));
-    cursor: pointer;
+.custom-table td {
+  padding: 1rem;
+  background: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition: background-color 0.3s ease;
+}
+
+.custom-table tr.expandable-row {
+  cursor: pointer;
+}
+
+.custom-table tr.expandable-row:hover td {
+  background: var(--card-glow);
+  transition: background-color 0.3s ease;
+}
+
+.expandable-row:hover {
+    background: linear-gradient(to right, rgba(255, 129, 76, 0.02), rgba(255, 129, 76, 0.2));
 }
 
 .hidden-row {
-    display: none;
-    background-color: #1d1d1d;
-    font-style: italic;
+  background-color: transparent;
+  border: none;
+  display: none;
 }
 
 .hidden-row td {
-    border-top: none;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    color: var(--secondary);
+  padding: 0;
+  border: none;
+  height: 0;
+}
+
+.collapse-wrapper {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--muted);
+  background: rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition:
+    opacity 0.25s ease,
+    max-height 0.5s ease,
+    padding 0.4s ease;
+}
+
+.collapse-wrapper.show {
+  opacity: 1;
+  max-height: 200px;
+  padding: 0.8rem 1.2rem;
+}
+
+.center {
+  text-align: center;
 }
 
 /* =========================
@@ -552,7 +598,7 @@ body {
    Skills Section
    ========================= */
 .skills-section {
-    padding: 1rem 0;
+    padding: 1rem;
     max-width: 1000px;
     margin: 0 auto;
     color: var(--text);
@@ -642,6 +688,10 @@ body {
     background-color: var(--accent);
 }
 
+.contact-section {
+    padding: 1rem;
+}
+
 /* =========================
    Footer
    ========================= */
@@ -654,17 +704,11 @@ body {
   margin-top: 4rem;
   color: var(--muted);
   font-size: 0.95rem;
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+  width: 100%;
   box-sizing: border-box;
 }
 
 .footer-container {
-  /* max-width: 960px; */
   margin: 0 auto;
 }
 
@@ -726,6 +770,10 @@ body {
 
     .job-details {
         flex: 1;
+    }
+
+    .education-section {
+        padding: 0.5rem;
     }
 
     .education-entry {

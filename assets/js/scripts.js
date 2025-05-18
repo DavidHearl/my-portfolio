@@ -20,14 +20,33 @@ document.querySelectorAll('.job-entry').forEach(entry => {
     });
 });
 
+
 document.querySelectorAll('.expandable-row').forEach(row => {
-    row.addEventListener('click', () => {
-        const next = row.nextElementSibling;
-        if (next && next.classList.contains('hidden-row')) {
-        next.style.display = next.style.display === 'table-row' ? 'none' : 'table-row';
-        }
-    });
+  row.addEventListener('click', () => {
+    const next = row.nextElementSibling;
+    if (!next || !next.classList.contains('hidden-row')) return;
+
+    const collapse = next.querySelector('.collapse-wrapper');
+    if (!collapse) return;
+
+    const isVisible = collapse.classList.contains('show');
+    if (isVisible) {
+      // Hide content
+      collapse.classList.remove('show');
+      setTimeout(() => {
+        next.style.display = 'none';
+      }, 500); // match your transition duration
+    } else {
+      // Show content
+      next.style.display = 'table-row';
+      requestAnimationFrame(() => {
+        collapse.classList.add('show');
+      });
+    }
+  });
 });
+
+
 
 document.addEventListener('DOMContentLoaded', function () {
     const toggle = document.querySelector('.nav-toggle');
