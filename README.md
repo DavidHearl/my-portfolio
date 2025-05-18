@@ -1,5 +1,8 @@
 # My Online Portfolio
 
+# Deployment
+https://davidhearl.github.io/my-portfolio/
+
 # Testing
 To create a development site ```python3 -m http.server```
 
