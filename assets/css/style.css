@@ -647,6 +647,57 @@ body {
 }
 
 /* =========================
+   Learning Section
+   ========================= */
+
+.improve-section {
+    padding: 0 2rem 4rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--text);
+}
+
+.improve-section .section-heading {
+    text-align: center;
+    font-size: 1.75rem;
+    color: var(--primary);
+    margin-bottom: 2rem;
+}
+
+.improve-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.improve-list li {
+    background-color: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    padding: 1rem 1.25rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    transition: background 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.improve-list li i {
+    font-size: 1.1rem;
+    color: var(--highlight);
+    flex-shrink: 0;
+}
+
+.improve-list li:hover {
+    background: rgba(255, 129, 76, 0.05);
+    transform: translateX(4px);
+}
+
+/* =========================
    Contact Section
    ========================= */
 .contact-form {
