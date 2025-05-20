@@ -159,7 +159,7 @@ body::after {
    Landing Section
    ========================= */
 #landing {
-    padding: 3rem 0.5rem 0 0.5rem;
+    padding: 3rem 1rem 0 1rem;
     max-width: 800px;
     margin: 0 auto;
 }
@@ -244,7 +244,7 @@ body::after {
 
 .social-links {
     display: flex;
-    gap: 36px;
+    gap: 32px;
 }
 
 .social-links a {
@@ -284,6 +284,10 @@ body::after {
     font-size: 1rem;
 }
 
+.general-text {
+    color: rgb(185, 185, 185);
+}
+
 /* =========================
    Work/Experience Section
    ========================= */
@@ -304,7 +308,6 @@ body::after {
     font-size: 1.75rem;
     font-weight: 600;
     color: var(--primary);
-    /* margin-bottom: 1.5rem; */
     text-align: center;    
 }
 
@@ -550,48 +553,54 @@ body::after {
 /* =========================
    Education Section
    ========================= */
-.education-section {
-    background-color: var(--bg);
-    color: var(--text);
-    max-width: 1000px;
-    margin: 0 auto;
+#education {
     padding: 1rem;
 }
 
-.education-entry {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    margin-bottom: 2rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid var(--border);
+.education-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.edu-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.edu-card:hover {
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.edu-card h3 {
+  margin-top: 0;
+  color: var(--primary);
 }
 
 .edu-dates {
-    min-width: 120px;
-    color: var(--accent);
-    font-weight: 500;
-    font-size: 0.95rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 0.75rem;
 }
 
-.edu-content h3 {
-    margin: 0 0 0.5rem;
-    font-size: 1.2rem;
-    color: var(--text);
-}
-
-.edu-item {
-    margin: 0.25rem 0;
-    font-size: 0.95rem;
-    line-height: 1.6;
+.edu-card ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  list-style: disc;
 }
 
 .edu-date {
-    display: inline-block;
-    margin-left: 0.5rem;
-    color: var(--secondary);
-    font-size: 0.85rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin-left: 0.5rem;
 }
+
 
 /* =========================
    Skills Section
@@ -801,6 +810,10 @@ body::after {
    Responsive Styles
    ========================= */
 @media (max-width: 768px) {
+    #landing {
+        padding: 1rem;
+    }
+
     .landing-wrapper {
         flex-direction: column;
     }
